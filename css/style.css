@@ -1,0 +1,260 @@
+
+
+
+header {
+    background-color: #F2F2F2;
+    height:20%;
+    
+}
+
+
+
+
+body{
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:1000px;
+    background-position-x: center;
+    font-family: Helvetica, Sans-Serif;
+    
+}
+
+.logo {
+    position: relative;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:11;
+
+}
+
+#hamburger{
+    display:none;
+}
+
+.img_hamburger{
+    position:absolute;
+    height:7%;
+    top:10px;
+    left:10px;
+    z-index:11;
+}
+
+
+.menu_mob{
+    background-color:#F2F2F2;
+    position:absolute;
+    width:100%;
+    padding-top:20px;
+    top:-1000px;
+
+}
+
+
+    
+
+
+
+.menu_mob  a{
+    font-family: Helvetica, Sans-Serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    display:block;
+    text-align: center;
+    margin-top:50px;
+    font-size:30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    z-index:10;
+    border:2px;
+    border-style:solid;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    color:#0939DE;
+    border-color:#0939DE;
+}
+
+
+h1{
+    font-family: Helvetica, Sans-Serif;
+    color: white;
+    font-size: 14pt;
+    text-align: center;
+    top:300px;
+    position: fixed;
+    z-index:-1;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+#container{
+    background-color:white;
+    position: relative;
+    top:700px;
+    padding-top:50px;
+}
+
+#container #intro p{
+    width:80%;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    color:black;
+    border: 2px;
+    border-top-style: none;
+    border-bottom-style: none;
+
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+    border-top-style: solid;
+    padding-top: 20px;
+}
+
+#diensten {
+    margin-top:50px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#diensten h2 {
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+#diensten ul li{
+    font-size:15px;
+    margin-top:15px;
+    
+}
+
+#diensten ul li a{
+    color:#0939DE;
+    text-decoration:none;
+    
+}
+
+#container_diensten{
+    background-color: white;
+    height:100%;
+    padding-top:50px;
+    margin-bottom:-50px;
+}
+
+#container_diensten #container_titels{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+#container_diensten #container_titels h3{
+    font-size:medium;
+}
+
+#container_diensten #container_titels h4{
+    font-size:22px;
+}
+
+#container_diensten #uitleg_dienst{
+    width:80%;
+    padding-top:20px;
+    border-top:2px;
+    border-style:solid;
+    border-color:black;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:20px;
+}
+
+#container_diensten #uitleg_dienst img {
+    width:100%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+#container_diensten #uitleg_dienst h5{
+    margin-top:10px;
+
+}
+
+#container_diensten #uitleg_dienst p{
+    font-size:small;
+    margin-top:5px;
+}
+
+#container_diensten #uitleg_dienst #prijzen_offerte{
+    margin-top:20px;
+    display:flex;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+
+#container_diensten #uitleg_dienst #prijzen_offerte a{
+    text-decoration:none;
+    color: #0939DE;
+    flex:50;
+    border:2px;
+    border-style:solid;
+    border-color:#0939DE;
+    padding:5px;
+    text-align: center;;
+    
+}
+
+#container_diensten #uitleg_dienst #prijzen_offerte a:first-child{
+    margin-right:20px;
+}
+
+#container_diensten #uitleg_dienst #prijzen_offerte a:last-child{
+    margin-left:20px;
+}
+
+
+
+
+
+#footer{
+    background-color:#F2F2F2;
+    border:2px;
+    border-top-style:solid;
+    border-top-color: #0939DE;;
+    padding-top:30px;
+    margin-top:50px;
+    
+
+}
+
+#footer #foot {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:50px;
+}
+
+#footer #foot ul{
+    font-size:14px;
+    
+}
+
+#footer #foot ul li{
+    margin-bottom:7px;
+    
+}
+
+#footer #foot  p{
+    margin-top:15px;
+    font-size:14px;
+}
+

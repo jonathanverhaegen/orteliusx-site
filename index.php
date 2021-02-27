@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrteliusX</title>
+    <link rel="icon" href="link">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<?php include_once("header.inc.php"); ?>
+
+
+<h1>PROFESSIONAL DRONE SULOTIONS</h1>
+
+
+<div id="container">
+
+    <div id=intro>
+        <p>Captatie van dronebeelden bezorgt uw project een verscheidenheid aan voordelen! Het is een uitstekende manier om sensatie en meeslependheid over te brengen en al zeker als u beroep doet op onze FPV-technieken.<br><br>
+
+            Heeft uw project nood aan overzicht, inspectie of monitoring? Vanuit de lucht bieden wij u een 360°-view van het te observeren goed. Ook karteren van uw project biedt organisatorische mogelijkheden in het ontwikkelen van uw algemeen ruimtebeheer.<br><br>
+            
+            Gelicenseerde piloten gaan met u in samenwerking zodat een uitstekend resultaat kan bekomen worden. </p>
+    </div>
+
+
+    <div id="diensten" >
+        <h2>DIENSTEN</h2>
+        <ul class="lijst_diensten">
+            <li><a href="promotie&raportage.php#foto-actie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
+            <li><a href="observatie&onderzoek.phpl#gis">GIS CARTOGRAFIE</a></li>
+            <li><a href="inspectie.php">INSPECTIE </a></li>
+            <li><a href="observatie&onderzoek.php#ortho">ORTHOGRAFISCHE FOTO’S</a></li>
+            <li><a href="">3D MODELLEN</a></li>
+            <li><a href="observatie&onderzoek.php#landmon">LANDBOUW MONITORING</a></li>
+            <li><a href="observatie&onderzoek.php#schade">SCHADE OPMETING</a></li>
+            <li><a href="observatie&onderzoek.php#volume">VOLUME BEREKENING</a></li>
+        </ul>
+    </div>
+
+
+    <?php include_once("footer.inc.php"); ?>
+
+    
+</body>
+</html>
