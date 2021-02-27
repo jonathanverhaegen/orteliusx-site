@@ -30,14 +30,14 @@
     <div id="diensten" >
         <h2>DIENSTEN</h2>
         <ul class="lijst_diensten">
-            <li><a href="promotie&raportage.php#foto-actie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
-            <li><a href="observatie&onderzoek.php#gis">GIS CARTOGRAFIE</a></li>
+            <li><a href="promotie&raportage.php#foto- en actie videografie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
+            <li><a href="observatie&onderzoek.php#gis cartografie">GIS CARTOGRAFIE</a></li>
             <li><a href="inspectie.php">INSPECTIE </a></li>
-            <li><a href="observatie&onderzoek.php#ortho">ORTHOGRAFISCHE FOTO’S</a></li>
+            <li><a href="observatie&onderzoek.php#orthografische foto's">ORTHOGRAFISCHE FOTO’S</a></li>
             <li><a href="">3D MODELLEN</a></li>
-            <li><a href="observatie&onderzoek.php#landmon">LANDBOUW MONITORING</a></li>
-            <li><a href="observatie&onderzoek.php#schade">SCHADE OPMETING</a></li>
-            <li><a href="observatie&onderzoek.php#volume">VOLUME BEREKENING</a></li>
+            <li><a href="observatie&onderzoek.php#landbouw monitoring">LANDBOUW MONITORING</a></li>
+            <li><a href="observatie&onderzoek.php#schade opmeting">SCHADE OPMETING</a></li>
+            <li><a href="observatie&onderzoek.php#volume berekening">VOLUME BEREKENING</a></li>
         </ul>
     </div>
 
