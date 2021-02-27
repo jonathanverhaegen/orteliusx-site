@@ -31,7 +31,7 @@
         <h2>DIENSTEN</h2>
         <ul class="lijst_diensten">
             <li><a href="promotie&raportage.php#foto-actie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
-            <li><a href="observatie&onderzoek.phpl#gis">GIS CARTOGRAFIE</a></li>
+            <li><a href="observatie&onderzoek.php#gis">GIS CARTOGRAFIE</a></li>
             <li><a href="inspectie.php">INSPECTIE </a></li>
             <li><a href="observatie&onderzoek.php#ortho">ORTHOGRAFISCHE FOTO’S</a></li>
             <li><a href="">3D MODELLEN</a></li>

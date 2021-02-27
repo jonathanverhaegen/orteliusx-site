@@ -14,7 +14,7 @@ include_once("data.inc.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promotie & rapportage</title>
+    <title>Observatie & onderzoek</title>
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,14 +26,14 @@ include_once("data.inc.php");
     <div id="container_diensten">
         <div id="container_titels">
             <h3>DIENSTEN</h3>
-            <h4>PROMOTIE EN RAPPORTAGE</h4>
+            <h4>Observatie & onderzoek</h4>
         </div>
         
-        <?php foreach($promoties as $key => $p): ?>
+        <?php foreach($observaties as $key => $o): ?>
         <div id="uitleg_dienst">
-            <img id="$key" src="<?php echo $p["image"] ?>" alt="foto">
-            <h5><?php echo $p["title"] ?></h5>
-            <p><?php echo $p["info"] ?></p>
+            <img id="<?php echo $key; ?>" src="<?php echo $o["image"] ?>" alt="foto">
+            <h5><?php echo $o["title"] ?></h5>
+            <p><?php echo $o["info"] ?></p>
             <div id="prijzen_offerte">
                 <a href="">PRIJZEN</a>
                 <a href="">OFFERTE</a>
