@@ -32,7 +32,7 @@ include_once("data.inc.php");
         <?php foreach($promoties as $key => $p): ?>
         <div id="uitleg_dienst">
             <img id="<?php echo $p["title"] ?>" src="<?php echo $p["image"] ?>" alt="foto">
-            <h5><?php echo $p["title"] ?></h5>
+            <h5><?php echo strtoupper($p["title"])  ?></h5>
             <p><?php echo $p["info"] ?></p>
             <div id="prijzen_offerte">
                 <a href="">PRIJZEN</a>

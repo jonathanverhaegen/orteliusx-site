@@ -30,7 +30,7 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
         
         
         afbeelding.src = "images/hamburger.svg"; 
-        position.top = "-400px";
+        position.top = "-1000px";
         
     })
 });
