@@ -299,6 +299,16 @@ h1{
         
     }
 
+    #intro{
+        display:none;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    
+
     .menu_desk{
         
         display:flex;
@@ -329,18 +339,27 @@ h1{
     }
 
     #diensten_desk{
-        width:80%;
+        width:95%;
         margin-left:auto;
         margin-right:auto;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
         
     }
 
     #diensten_desk .dienst_desk{
-        align-items: start;
-        margin-top:20px;
         
+        margin-top:20px;
+        display:grid;
+        justify-content: center;
+        
+        
+    }
+
+    #diensten_desk .dienst_desk a{
+        text-decoration: none;
+        color:black;
     }
 
     #diensten_desk .dienst_desk img{
@@ -354,7 +373,11 @@ h1{
 
     #diensten_desk .dienst_desk h5{
         margin-top:10px;
-        width:60%;
+        
+    }
+
+    #diensten_desk .dienst_desk img:hover{
+        filter: grayscale(1);
     }
     
 }

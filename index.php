@@ -53,32 +53,39 @@ include_once("data.inc.php");
 
     <?php foreach($promoties as $key => $p) :?>
         <div class="dienst_desk">
-            <img src="<?php echo $p['image'] ?>" alt="diensten">
-            <p><?php echo $p['catagorie'] ?></p>
-            <h5><?php echo $p['title'] ?></h5>
+            <a href="">
+                <img src="<?php echo $p['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($p['catagorie'])  ?></p>
+                <h5><?php echo strtoupper($p['title'])  ?></h5>
+            </a>
         </div>
 
         <?php endforeach; ?>
 
         <?php foreach($observaties as $key => $o) :?>
         <div class="dienst_desk">
-            <img src="<?php echo $o['image'] ?>" alt="diensten">
-            <p><?php echo $o['catagorie'] ?></p>
-            <h5><?php echo $o['title'] ?></h5>
+            <a href="">
+                <img src="<?php echo $o['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($o['catagorie']) ?></p>
+                <h5><?php echo strtoupper($o['title'])  ?></h5>
+            </a>
         </div>
 
         <?php endforeach; ?>
 
         <?php foreach($inspectie as $key => $i) :?>
         <div class="dienst_desk">
-            <img src="<?php echo $i['image'] ?>" alt="diensten">
-            <p><?php echo $i['catagorie'] ?></p>
-            <h5><?php echo $i['title'] ?></h5>
+            <a href="">
+                <img src="<?php echo $i['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($i['catagorie'] ) ?></p>
+                <h5><?php echo strtoupper($i['title'])  ?></h5>
+            </a>
         </div>
 
         <?php endforeach; ?>
 
     </div>
+    
     
     
 

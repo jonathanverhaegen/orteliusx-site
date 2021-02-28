@@ -49,7 +49,7 @@ $promoties = [
         ],
         "volume berekening, stock management & opmetingen" => [
             "image" => "images/1.JPG",
-            "title" => "volume berekening, stock management & opmetingen",
+            "title" => "volume berekening",
             "info" => "Beheer en analyseer uw project met aangeleverde 2D/3D data om uw analyses zo nauwkeurig mogelijk uit te voeren.",
             "catagorie" => "Observatie & onderzoek"
         ]
