@@ -53,7 +53,7 @@ include_once("data.inc.php");
 
     <?php foreach($promoties as $key => $p) :?>
         <div class="dienst_desk">
-            <a href="">
+            <a href="promotie&raportage.php#<?php echo $key; ?>">
                 <img src="<?php echo $p['image'] ?>" alt="diensten">
                 <p><?php echo strtoupper($p['catagorie'])  ?></p>
                 <h5><?php echo strtoupper($p['title'])  ?></h5>
@@ -64,7 +64,7 @@ include_once("data.inc.php");
 
         <?php foreach($observaties as $key => $o) :?>
         <div class="dienst_desk">
-            <a href="">
+            <a href="observatie&onderzoek.php#<?php echo $key ?>">
                 <img src="<?php echo $o['image'] ?>" alt="diensten">
                 <p><?php echo strtoupper($o['catagorie']) ?></p>
                 <h5><?php echo strtoupper($o['title'])  ?></h5>
@@ -73,9 +73,9 @@ include_once("data.inc.php");
 
         <?php endforeach; ?>
 
-        <?php foreach($inspectie as $key => $i) :?>
+        <?php foreach($inspecties as $key => $i) :?>
         <div class="dienst_desk">
-            <a href="">
+            <a href="inspectie.php#<?php echo $key?>">
                 <img src="<?php echo $i['image'] ?>" alt="diensten">
                 <p><?php echo strtoupper($i['catagorie'] ) ?></p>
                 <h5><?php echo strtoupper($i['title'])  ?></h5>

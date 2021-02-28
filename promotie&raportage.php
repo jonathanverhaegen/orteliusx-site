@@ -31,7 +31,8 @@ include_once("data.inc.php");
         
         <?php foreach($promoties as $key => $p): ?>
         <div id="uitleg_dienst">
-            <img id="<?php echo $key ?>" src="<?php echo $p["image"] ?>" alt="foto">
+        <span class="anchor" id="<?php echo $key ?>"></span>
+            <img  src="<?php echo $p["image"] ?>" alt="foto">
             <h5><?php echo strtoupper($p["title"])  ?></h5>
             <p><?php echo $p["info"] ?></p>
             <div id="prijzen_offerte">

@@ -13,6 +13,11 @@ header {
     display:none;
 }
 
+.anchor{
+    position: absolute;
+    transform: translateY(-25vh);
+}
+
 
 
 
@@ -378,6 +383,54 @@ h1{
 
     #diensten_desk .dienst_desk img:hover{
         filter: grayscale(1);
+    }
+
+
+    #container_diensten #container_titels h4{
+        margin-bottom:20px;
+        text-transform: uppercase;
+        margin-top:10px;
+        font-size: 30px;
+    }
+
+
+    #container_diensten #uitleg_dienst{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #container_diensten #uitleg_dienst h5{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        
+        
+    }
+
+    #container_diensten #uitleg_dienst p{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-top:35px;
+    }
+
+    #container_diensten #uitleg_dienst #prijzen_offerte{
+        grid-column: 1;
+        grid-row-start: 3;
+        
+    }
+
+    #container_diensten #uitleg_dienst #prijzen_offerte a{
+        display:grid;
+        align-content: center;
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+
+    #container_diensten #uitleg_dienst img{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        width:80%;
+        margin-right: 0;
     }
     
 }

@@ -31,7 +31,8 @@ include_once("data.inc.php");
         
         <?php foreach($observaties as $key => $o): ?>
         <div id="uitleg_dienst">
-            <img id="<?php echo $key ?>" src="<?php echo $o["image"] ?>" alt="foto">
+        <span class="anchor" id="<?php echo $key ?>"></span>
+            <img  src="<?php echo $o["image"] ?>" alt="foto">
             <h5><?php echo strtoupper($o["title"])  ?></h5>
             <p><?php echo $o["info"] ?></p>
             <div id="prijzen_offerte">
