@@ -47,7 +47,7 @@ $promoties = [
             "info" => "Observatie van eventuele schade, monitoring van akkers en opsporing van onregelmatigheden in de biomassa.",
             "catagorie" => "Observatie & onderzoek"
         ],
-        "volume berekening, stock management & opmetingen" => [
+        "volume berekening" => [
             "image" => "images/1.JPG",
             "title" => "volume berekening",
             "info" => "Beheer en analyseer uw project met aangeleverde 2D/3D data om uw analyses zo nauwkeurig mogelijk uit te voeren.",
