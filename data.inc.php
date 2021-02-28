@@ -18,8 +18,12 @@ $promoties = [
         "title" => "onroerend",
         "info" => "Het in beeld brengen van percelen in 2D of 3D bevorderd sensatie en inlevingsvermogen naar uw klant toe. Het biedt een creatieve werkmethode aan die in vastgoedkantoren meer-en-meer worden toegepast.",
         "catagorie" => "Promoties & rapportage"
-    ]
-
+    ],
+    "3d modellen" => [
+        "image" => "images/1.JPG",
+        "title" => "3d modellen",
+        "info" => "lorem ipsum",
+        "catagorie" => "Promoties & rapportage"]
     ];
 
     $observaties = [
