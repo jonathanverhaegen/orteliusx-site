@@ -6,6 +6,8 @@
 header {
     background-color: #F2F2F2;
     height:20%;
+    border-bottom: 2px solid #0939DE;
+    
     
 }
 
@@ -25,7 +27,7 @@ body{
     background-image: url("../images/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 150%;
+    background-size: 1000px;
     background-position-x: center;
     font-family: Helvetica, Sans-Serif;
     
