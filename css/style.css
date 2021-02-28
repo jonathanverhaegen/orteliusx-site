@@ -18,7 +18,7 @@ body{
     background-image: url("../images/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:1000px;
+    background-size: 150%;
     background-position-x: center;
     font-family: Helvetica, Sans-Serif;
     
@@ -119,25 +119,31 @@ h1{
     padding-top: 20px;
 }
 
-#diensten {
+#diensten_desk{
+    display:none;
+}
+
+#diensten_mob {
     margin-top:50px;
     width:80%;
     margin-left:auto;
     margin-right:auto;
+    display:flex;
+    flex-direction:column;
 }
 
-#diensten h2 {
+#diensten_mob h2 {
     font-size:30px;
     margin-bottom:20px;
 }
 
-#diensten ul li{
+#diensten_mob ul li{
     font-size:15px;
     margin-top:15px;
     
 }
 
-#diensten ul li a{
+#diensten_mob ul li a{
     color:#0939DE;
     text-decoration:none;
     
@@ -304,11 +310,35 @@ h1{
 
         text-decoration: none;
         color:black;
+        text-transform: uppercase;
 
     }
 
     .menu_desk a:hover{
         color:#0939DE;
     }
+
+    body{
+        background-size:100%;
+    }
+
+    #diensten_mob{
+        display:none;
+    }
+
+    #diensten_desk{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        display:grid;
+    }
+
+    
+
+    #diensten_desk .dienst_desk img{
+        width:250px;
+    }
+
+    
 }
 

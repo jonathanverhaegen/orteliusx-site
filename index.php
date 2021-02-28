@@ -27,7 +27,7 @@
     </div>
 
 
-    <div id="diensten" >
+    <div id="diensten_mob" >
         <h2>DIENSTEN</h2>
         <ul class="lijst_diensten">
             <li><a href="promotie&raportage.php#foto- en actie videografie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
@@ -39,6 +39,15 @@
             <li><a href="observatie&onderzoek.php#schade opmeting">SCHADE OPMETING</a></li>
             <li><a href="observatie&onderzoek.php#volume berekening">VOLUME BEREKENING</a></li>
         </ul>
+    </div>
+
+    <div id="diensten_desk">
+        <div class="dienst_desk">
+            <img src="images/1.JPG" alt="diensten">
+            <p>promotie&cartografie</p>
+            <h5>gis cartografie</h5>
+        </div>
+
     </div>
 
 
