@@ -20,5 +20,16 @@
                 <a id="link" href="contact.php">Contact</a>
             
         </div>
+
+        <div class="menu_desk" >
+            
+                <a id="link" href="#diensten">Diensten</a>
+                <a id="link" href="prijzen.php">Prijzen</a>
+                <a id="link" href="offerte.php">Offerte</a>
+                <a id="link" href="contact.php">Contact</a>
+            
+        </div>
+
+        
     </nav>
 </header>

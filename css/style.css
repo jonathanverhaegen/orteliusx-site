@@ -7,6 +7,10 @@ header {
     
 }
 
+.menu_desk{
+    display:none;
+}
+
 
 
 
@@ -229,7 +233,7 @@ h1{
     background-color:#F2F2F2;
     border:2px;
     border-top-style:solid;
-    border-top-color: #0939DE;;
+    border-top-color: #0939DE;
     padding-top:30px;
     margin-top:50px;
     
@@ -256,5 +260,55 @@ h1{
 #footer #foot  p{
     margin-top:15px;
     font-size:14px;
+}
+
+
+@media(min-width:700px){
+    
+    .menu_mob{
+        display:none;
+    }
+
+    .hamburger{
+        display:none;
+    }
+
+    #hamburger{
+        display:none;
+    }
+
+    .img_hamburger{
+        display:none;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    nav{
+        display:flex;
+        align-items: center;
+        
+    }
+
+    .menu_desk{
+        
+        display:flex;
+        gap:50px;
+        margin-right:10%;
+        
+    }
+
+    .menu_desk a {
+        align-content: space-between;
+
+        text-decoration: none;
+        color:black;
+
+    }
+
+    .menu_desk a:hover{
+        color:#0939DE;
+    }
 }
 
