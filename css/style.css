@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 
 header {
@@ -331,14 +333,29 @@ h1{
         margin-left:auto;
         margin-right:auto;
         display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
 
-    
+    #diensten_desk .dienst_desk{
+        align-items: start;
+        margin-top:20px;
+        
+    }
 
     #diensten_desk .dienst_desk img{
         width:250px;
     }
 
+    #diensten_desk .dienst_desk p{
+        font-size:small;
+        margin-top:5px;
+    }
+
+    #diensten_desk .dienst_desk h5{
+        margin-top:10px;
+        width:60%;
+    }
     
 }
 

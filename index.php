@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+include_once("data.inc.php");
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,15 +46,41 @@
         </ul>
     </div>
 
+
+    
+
     <div id="diensten_desk">
+
+    <?php foreach($promoties as $key => $p) :?>
         <div class="dienst_desk">
-            <img src="images/1.JPG" alt="diensten">
-            <p>promotie&cartografie</p>
-            <h5>gis cartografie</h5>
+            <img src="<?php echo $p['image'] ?>" alt="diensten">
+            <p><?php echo $p['catagorie'] ?></p>
+            <h5><?php echo $p['title'] ?></h5>
         </div>
 
-    </div>
+        <?php endforeach; ?>
 
+        <?php foreach($observaties as $key => $o) :?>
+        <div class="dienst_desk">
+            <img src="<?php echo $o['image'] ?>" alt="diensten">
+            <p><?php echo $o['catagorie'] ?></p>
+            <h5><?php echo $o['title'] ?></h5>
+        </div>
+
+        <?php endforeach; ?>
+
+        <?php foreach($inspectie as $key => $i) :?>
+        <div class="dienst_desk">
+            <img src="<?php echo $i['image'] ?>" alt="diensten">
+            <p><?php echo $i['catagorie'] ?></p>
+            <h5><?php echo $i['title'] ?></h5>
+        </div>
+
+        <?php endforeach; ?>
+
+    </div>
+    
+    
 
     <?php include_once("footer.inc.php"); ?>
 
