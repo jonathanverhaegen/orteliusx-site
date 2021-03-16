@@ -2,19 +2,6 @@
 
 include_once("data.inc.php");
 
-$prijzen = [
-    [ "titel" => "BASIC", "prijs" => "€397" ],
-    [ "titel" => "ADVANCED", "prijs" => "€659" ],
-    [ "titel" => "ADVANCED+", "prijs" => "€>899" ],
-    [ "titel" => "OP MAAT", "prijs" => "Variabel" ]
-    
-]
-
-
-    
-
-
-
 
 
 ?><!DOCTYPE html>
@@ -46,7 +33,7 @@ $prijzen = [
         <div id="uitleg_prijzen">
             <h5><?php echo $p["titel"] ?></h5>
             <p><?php echo $p["prijs"] ?></p>
-            <a href="">OFFERTE</a>
+            <a href="">MEER INFO</a>
         </div>
         
         <?php endforeach; ?>

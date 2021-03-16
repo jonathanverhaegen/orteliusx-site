@@ -245,6 +245,8 @@ h1{
     margin-left:20px;
 }
 
+/* prijzen page */
+
 #container_prijzen{
     background-color: white;
     height:100%;
@@ -321,7 +323,83 @@ h1{
     padding-bottom:50px;
 }
 
+/* contact page */
 
+#container_contact{
+    background-color: white;
+    width:80%;
+    padding-top: 100px;
+    margin-bottom:-50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#container_contact #container_titels{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:10px;
+}
+
+#container_contact #container_titels h4{
+    font-size:22px;
+    border-bottom: solid black 2px;
+    padding-bottom: 5px;
+}
+
+#container_contact p{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.info{
+    padding-top:5px;
+    color:#0939DE;
+}
+
+.info p{
+    padding-top:10px;
+}
+
+.adress{
+    padding-top:20px;
+}
+
+.adress p {
+    padding-top:5px;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top:50px;
+    padding-bottom:20px;
+}
+
+.contact h6{
+    color:#0939DE;
+    padding-bottom:20px;
+    font-size: 1.5em;
+}
+
+
+
+input[type=text], textarea{
+    width: 100%; 
+    padding: 12px; 
+    background-color: #F2F2F2;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    border:none;
+}
+
+#background{
+    width:100%;
+    background-color:white;
+}
 
 
 

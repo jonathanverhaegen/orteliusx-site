@@ -82,4 +82,12 @@ $promoties = [
         
             ];
 
+            $prijzen = [
+                [ "titel" => "BASIC", "prijs" => "€397"],
+                [ "titel" => "ADVANCED", "prijs" => "€659" ],
+                [ "titel" => "ADVANCED+", "prijs" => "€>899" ],
+                [ "titel" => "OP MAAT", "prijs" => "Variabel" ]
+                
+            ];
+
     
