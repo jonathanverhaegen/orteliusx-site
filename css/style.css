@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 
 
@@ -112,7 +113,7 @@ h1{
     background-color:white;
     position: relative;
     top:700px;
-    padding-top:50px;
+    padding-top:100px;
 }
 
 #container #intro p{
@@ -147,6 +148,7 @@ h1{
 #diensten_mob h2 {
     font-size:30px;
     margin-bottom:20px;
+    
 }
 
 #diensten_mob ul li{
@@ -164,7 +166,7 @@ h1{
 #container_diensten{
     background-color: white;
     height:100%;
-    padding-top:50px;
+    padding-top: 100px;
     margin-bottom:-50px;
 }
 
@@ -182,14 +184,14 @@ h1{
 
 #container_diensten #container_titels h4{
     font-size:22px;
+    border-bottom: solid black 2px;
+    padding-bottom: 5px;
+    padding-top:5px;
 }
 
 #container_diensten #uitleg_dienst{
     width:80%;
     padding-top:20px;
-    border-top:2px;
-    border-style:solid;
-    border-color:black;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:20px;
@@ -231,7 +233,7 @@ h1{
     border-style:solid;
     border-color:#0939DE;
     padding:5px;
-    text-align: center;;
+    text-align: center;
     
 }
 
@@ -242,6 +244,86 @@ h1{
 #container_diensten #uitleg_dienst #prijzen_offerte a:last-child{
     margin-left:20px;
 }
+
+#container_prijzen{
+    background-color: white;
+    height:100%;
+    padding-top: 100px;
+    margin-bottom:-50px;
+}
+
+#container_prijzen #container_titels{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:10px;
+}
+
+#container_prijzen #container_titels h4{
+    font-size:22px;
+    border-bottom: solid black 2px;
+    padding-bottom: 5px;
+}
+
+#container_prijzen #container_uitleg{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+
+#container_prijzen #uitleg_prijzen{
+    width: 100%;
+    background-color:#EBEBEB;
+    padding-top:20px;
+    border-top:2px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:20px;
+    margin-top:5px;
+    display:grid;
+    justify-content: center;
+    
+    
+}
+
+#container_prijzen #uitleg_prijzen h5{
+    
+    text-align:center;
+}
+
+#container_prijzen #uitleg_prijzen p{
+    margin-bottom:100px;
+    text-align:center;
+    padding-top:5px;
+}
+
+#container_prijzen #uitleg_prijzen a{
+    text-decoration:none;
+    color: #0939DE;
+    flex:50;
+    border:2px;
+    border-style:solid;
+    border-color:#0939DE;
+    padding:5px;
+    text-align: center;
+    margin-top: 20px;
+    text-align:center;
+}
+
+#container_prijzen .extra_uitleg_prijzen{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+
+
+
+
 
 
 
