@@ -386,7 +386,7 @@ h1{
 
 
 
-input[type=text], textarea{
+input[type=text], textarea, select{
     width: 100%; 
     padding: 12px; 
     background-color: #F2F2F2;

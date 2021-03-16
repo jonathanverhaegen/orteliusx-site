@@ -90,4 +90,6 @@ $promoties = [
                 
             ];
 
+            $diensten = array_merge($promoties, $observaties, $inspecties);
+
     

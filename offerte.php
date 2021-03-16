@@ -4,12 +4,15 @@ include_once("data.inc.php");
 
 
 
+
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijzen</title>
+    <title>Offerte</title>
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -25,7 +28,7 @@ include_once("data.inc.php");
     <div id=container_contact>
 
             <div id="container_titels">
-                <h4>CONTACT</h4>
+                <h4>OFFERTE</h4>
             </div>
 
             <div>
@@ -58,6 +61,14 @@ include_once("data.inc.php");
 
                     <label for="phone">Telefoonnummer</label>
                     <input type="text" id="phone" name="phone" >
+
+                    <label for="onderwerp">Onderwerp</label>
+                    <select id="onderwerp" name="onderwerp">
+                    <?php foreach($diensten as $d): ?>
+                    <option value="<?php echo $d["title"] ?>"><?php echo $d["title"] ?></option>
+                    <?php endforeach; ?>
+                    </select>
+
 
                     <label for="message">Bericht</label>
                     <textarea type="text" id="message" name="message" style="height:200px;" ></textarea>
