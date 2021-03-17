@@ -4,9 +4,6 @@ include_once("data.inc.php");
 
 
 
-
-
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,21 +28,25 @@ include_once("data.inc.php");
                 <h4>OFFERTE</h4>
             </div>
 
-            <div>
+            <div class="grid">
 
-                <p>Wil u meer informatie of heeft u vragen over onze diensten? Aarzel dan niet om contact op te nemen.</p>
-            
-                <div class="info">
-                    <p>TEL: 0478527796</p>
-                    <p>E-MAIL: info@orteliusx.be</p>
+<div class="grid_text">
 
-                </div>
+    <p>Wil u meer informatie of heeft u vragen over onze diensten? Aarzel dan niet om contact op te nemen.</p>
 
-                <div class="adress">
-                    <p>Driesstraat 87 </p>
-                    <p>3461 Bekkevoort</p>
-                    <p>BTW BE0755.913.872</p>
-                </div>
+    <div class="info">
+        <p>TEL: 0478527796</p>
+        <p>E-MAIL: info@orteliusx.be</p>
+
+    </div>
+
+    <div class="adress">
+        <p>Driesstraat 87 </p>
+        <p>3461 Bekkevoort</p>
+        <p>BTW BE0755.913.872</p>
+    </div>
+
+    </div>
 
 
                 <div class="contact">
@@ -72,6 +73,10 @@ include_once("data.inc.php");
 
                     <label for="message">Bericht</label>
                     <textarea type="text" id="message" name="message" style="height:200px;" ></textarea>
+
+                    <div class="btn">
+                        <input type="submit" value="VERSTUREN">
+                    </div>
 
 
 

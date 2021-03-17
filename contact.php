@@ -28,7 +28,9 @@ include_once("data.inc.php");
                 <h4>CONTACT</h4>
             </div>
 
-            <div>
+            <div class="grid">
+
+            <div class="grid_text">
 
                 <p>Wil u meer informatie of heeft u vragen over onze diensten? Aarzel dan niet om contact op te nemen.</p>
             
@@ -43,6 +45,9 @@ include_once("data.inc.php");
                     <p>3461 Bekkevoort</p>
                     <p>BTW BE0755.913.872</p>
                 </div>
+
+                </div>
+
 
 
                 <div class="contact">
@@ -62,7 +67,9 @@ include_once("data.inc.php");
                     <label for="message">Bericht</label>
                     <textarea type="text" id="message" name="message" style="height:200px;" ></textarea>
 
-
+                    <div class="btn">
+                        <input type="submit" value="VERSTUREN">
+                    </div>
 
                     </form>
 

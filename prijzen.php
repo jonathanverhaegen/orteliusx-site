@@ -33,7 +33,8 @@ include_once("data.inc.php");
         <div id="uitleg_prijzen">
             <h5><?php echo $p["titel"] ?></h5>
             <p><?php echo $p["prijs"] ?></p>
-            <a href="">MEER INFO</a>
+            <a class="btn_mobile" href="">MEER INFO</a>
+            <a class="btn_desk" href="">OFFERTE</a>
         </div>
         
         <?php endforeach; ?>
