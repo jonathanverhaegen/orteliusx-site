@@ -468,6 +468,12 @@ input[type=submit]{
     font-size:14px;
 }
 
+.menu_diensten{
+    display:none;
+}
+
+
+
 
 @media(min-width:700px){
     
@@ -503,6 +509,17 @@ input[type=submit]{
 
     h1{
         font-size: 50px;
+    }
+
+    .menu_diensten{
+        display:none;
+        
+    }
+
+    .menu_diensten a{
+        text-decoration: none;
+        color:black;
+        text-transform: uppercase;
     }
 
     

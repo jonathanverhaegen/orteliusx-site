@@ -53,16 +53,40 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
 
     <div id="diensten_desk">
 
-    <?php foreach($diensten as $key => $d) :?>
+    <?php foreach($promoties as $key => $p) :?>
         <div class="dienst_desk">
             <a href="promotie&raportage.php#<?php echo $key; ?>">
-                <img src="<?php echo $d['image'] ?>" alt="diensten">
-                <p><?php echo strtoupper($d['catagorie'])  ?></p>
-                <h5><?php echo strtoupper($d['title'])  ?></h5>
+                <img src="<?php echo $p['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($p['catagorie'])  ?></p>
+                <h5><?php echo strtoupper($p['title'])  ?></h5>
             </a>
         </div>
 
         <?php endforeach; ?>
+
+    <?php foreach($observaties as $key => $o) :?>
+        <div class="dienst_desk">
+            <a href="promotie&raportage.php#<?php echo $key; ?>">
+                <img src="<?php echo $o['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($o['catagorie'])  ?></p>
+                <h5><?php echo strtoupper($o['title'])  ?></h5>
+            </a>
+        </div>
+
+    <?php endforeach; ?>
+
+    <?php foreach($inspecties as $key => $i) :?>
+        <div class="dienst_desk">
+            <a href="promotie&raportage.php#<?php echo $key; ?>">
+                <img src="<?php echo $i['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($i['catagorie'])  ?></p>
+                <h5><?php echo strtoupper($i['title'])  ?></h5>
+            </a>
+        </div>
+
+    <?php endforeach; ?>
+
+    
 
 
     </div>

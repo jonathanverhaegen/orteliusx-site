@@ -6,7 +6,7 @@ if(!empty($_GET["dienst"])){
 
     $diensten = $_GET["dienst"];
 
-    var_dump($diensten);
+    
     
 }else{
     $diensten = array_merge($promoties, $observaties, $inspecties);

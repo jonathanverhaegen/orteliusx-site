@@ -38,5 +38,25 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
 
 document.querySelector(".logo").addEventListener("click", function(e){
     window.location.href = "index.php";
+});
+
+//menu verspingt
+
+let prijzen = document.querySelector("#link_prijzen");
+let offerte = document.querySelector("#link_offerte");
+let contact = document.querySelector("#link_contact");
+let menu_diensten = document.querySelector(".menu_diensten");
+
+document.querySelector("#link_diensten").addEventListener("click", function(e){
+    e.preventDefault();
+    
+    prijzen.style.display = "none";
+    offerte.style.display = "none";
+    contact.style.display = "none";
+
+    menu_diensten.style.display = "flex";
+    menu_diensten.style.gap = "50px";
+    menu_diensten.style.marginRight = "15%";
+
 })
 

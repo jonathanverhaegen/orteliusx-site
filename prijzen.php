@@ -54,7 +54,7 @@ include_once("data.inc.php");
                 <li><?php echo $i?></li>
                 <?php endforeach; ?>
             </ul>
-            <a class="btn_desk" href="">OFFERTE</a>
+            <a class="btn_desk" href="offerte.php">OFFERTE</a>
         </div>
         
         <?php endforeach; ?>
