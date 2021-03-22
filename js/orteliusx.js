@@ -39,3 +39,4 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
 document.querySelector(".logo").addEventListener("click", function(e){
     window.location.href = "index.php";
 })
+

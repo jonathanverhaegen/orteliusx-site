@@ -22,18 +22,38 @@ include_once("data.inc.php");
 
     <div id="container_prijzen">
         <div id="container_titels">
-            <h4>Prijzen</h4>
+            <h4>PRIJZEN</h4>
         </div>
 
-        <div id="container_uitleg">
+        <div id="container_uitleg_mob">
+
+            <?php foreach($prijzen as $p): ?>
+
+
+                <div id="uitleg_prijzen">
+                    <h5><?php echo $p["titel"] ?></h5>
+                    <p><?php echo $p["prijs"] ?></p>
+                    <a class="btn_mobile" href="">MEER INFO</a>
+                    
+                </div>
+
+            <?php endforeach; ?>
+    </div>
+
+        <div id="container_uitleg_desk">
 
         <?php foreach($prijzen as $p): ?>
         
         
         <div id="uitleg_prijzen">
             <h5><?php echo $p["titel"] ?></h5>
-            <p><?php echo $p["prijs"] ?></p>
-            <a class="btn_mobile" href="">MEER INFO</a>
+            <p class="prijs"><?php echo $p["prijs"] ?></p>
+            <p class="uitleg"><?php echo $p["uitleg"] ?></p>
+            <ul class="infoPrijs">
+                <?php foreach($p["info"] as $i): ?>
+                <li><?php echo $i?></li>
+                <?php endforeach; ?>
+            </ul>
             <a class="btn_desk" href="">OFFERTE</a>
         </div>
         

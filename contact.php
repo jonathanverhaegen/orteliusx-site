@@ -4,12 +4,32 @@ include_once("data.inc.php");
 
 
 
+if(!empty($_POST)){
+    
+    $to = "jonathan_verhaegen@hotmail.com";
+
+    $subject = `contact formulier van ${$_POST["name"]}`;
+    
+    $message = $_POST["message"];
+    
+    $headers = "From: Toon van OrteliusX <jonathan_verhaegen@hotmail.com>\r\n";
+    $headers .= "Reply-To: jonathan_verhaegen@hotmail.com\r\n";
+    $headers .= "Content-type: text\html\r\n";
+
+    mail($to, $subject, $message, $headers);
+
+
+
+}
+
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijzen</title>
+    <title>Contact</title>
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">

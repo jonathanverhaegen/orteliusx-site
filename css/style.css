@@ -267,7 +267,7 @@ h1{
     padding-bottom: 5px;
 }
 
-#container_prijzen #container_uitleg{
+#container_prijzen #container_uitleg_mob{
     width:80%;
     margin-left:auto;
     margin-right:auto;
@@ -291,9 +291,6 @@ h1{
     
 }
 
-#container_prijzen #uitleg_prijzen .btn_desk{
-    display:none;
-}
 
 #container_prijzen #uitleg_prijzen h5{
     
@@ -325,6 +322,10 @@ h1{
     margin-right:auto;
     padding-top:20px;
     padding-bottom:50px;
+}
+
+#container_prijzen #container_uitleg_desk{
+    display:none;
 }
 
 /* contact page */
@@ -627,32 +628,56 @@ input[type=submit]{
         
     }
 
-    #container_prijzen #container_uitleg{
+    #container_prijzen #container_uitleg_desk{
         width:80%;
         margin-left:auto;
         margin-right:auto;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap:10px;
+        
     }
 
     #container_prijzen #uitleg_prijzen{
         background-color:white;
-        height: 250px;
+        height: auto;
         border-right: solid black 1px;
+        display:grid;
+        grid-template-rows: 5% 20% 20% 40% 15%;
+        padding:10px;
+    }
+
+    #container_prijzen #uitleg_prijzen:hover{
+        background-color: #EBEBEB;
+        
+    }
+
+    #container_prijzen #uitleg_prijzen h5,p{
+        text-align:center;
+        
+    }
+    
+
+    
+    #container_prijzen #uitleg_prijzen  a{
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    #container_prijzen #uitleg_prijzen .infoPrijs{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     #container_prijzen #uitleg_prijzen:last-child{
         border:none;
     }
 
-    #container_prijzen #uitleg_prijzen .btn_mobile{
-        display:none;
-    }
-
-    #container_prijzen #uitleg_prijzen .btn_desk{
-        display:block;
-    }
+    
 
     #container_prijzen .extra_uitleg_prijzen{
         width:50%;
@@ -660,7 +685,20 @@ input[type=submit]{
         margin-right:auto;
         opacity: 80%;
         text-align:center;
+        margin-top:50px;
     }
+
+    
+
+    #container_prijzen #container_uitleg_mob{
+        display:none;
+    }
+
+
+
+
+
+
 
     #background #container_contact{
         width:90%;

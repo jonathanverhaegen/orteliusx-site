@@ -3,6 +3,8 @@
 include_once("data.inc.php");
 
 
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +20,7 @@ include_once("data.inc.php");
 <?php include_once("header.inc.php"); ?>
 
 
-<h1>PROFESSIONAL DRONE SULOTIONS</h1>
+<h1>PROFESSIONAL DRONE SOLUTIONS</h1>
 
 
 <div id="container">
