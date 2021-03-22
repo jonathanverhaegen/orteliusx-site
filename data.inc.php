@@ -69,7 +69,7 @@ $promoties = [
             ],
             "gebouwen/constructies" => [
                 "image" => "images/1.JPG",
-                "title" => "gebouwen/constructies",
+                "title" => "gebouwen & constructies",
                 "info" => "Het werken met stellingen of een hoogtewerker is omslachtig geworden voor het uitvoeren van inspecties van gevels of hoogte-observaties. Door gebrek aan ruimte en het in vele situaties ondoenbaar is om elke hoek doorgrondig te inspecteren vormen drones de oplossing voor het bekomen van een goede analyse.",
                 "catagorie" => "Inspectie"
             ],
@@ -90,6 +90,6 @@ $promoties = [
                 
             ];
 
-            $diensten = array_merge($promoties, $observaties, $inspecties);
+            
 
     

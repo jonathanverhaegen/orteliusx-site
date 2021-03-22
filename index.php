@@ -2,7 +2,7 @@
 
 include_once("data.inc.php");
 
-
+$diensten = array_merge($promoties, $observaties, $inspecties);
 
 
 ?><!DOCTYPE html>

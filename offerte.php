@@ -2,6 +2,16 @@
 
 include_once("data.inc.php");
 
+if(!empty($_GET["dienst"])){
+
+    $diensten = $_GET["dienst"];
+
+    var_dump($diensten);
+    
+}else{
+    $diensten = array_merge($promoties, $observaties, $inspecties);
+}
+
 
 
 ?><!DOCTYPE html>
@@ -65,9 +75,21 @@ include_once("data.inc.php");
 
                     <label for="onderwerp">Onderwerp</label>
                     <select id="onderwerp" name="onderwerp">
-                    <?php foreach($diensten as $d): ?>
-                    <option value="<?php echo $d["title"] ?>"><?php echo $d["title"] ?></option>
-                    <?php endforeach; ?>
+
+                    
+
+                        <?php if(!empty($_GET["dienst"])):?>
+                            <option value="<?php echo $diensten ?>"><?php echo $diensten ?></option>
+                        <?php endif; ?>
+
+                        <?php if(empty($_GET["dienst"])):?>
+                            
+                            <?php foreach($diensten as $d): ?>
+                            <option value="<?php echo $d["title"] ?>"><?php echo $d["title"] ?></option>
+                            <?php endforeach; ?>
+
+                        <?php endif; ?>
+
                     </select>
 
 

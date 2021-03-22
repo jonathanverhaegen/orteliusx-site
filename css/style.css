@@ -746,6 +746,32 @@ input[type=submit]{
         cursor:pointer;
     }
 
+   
+    
+    #footer #foot {
+        display:grid;
+        grid-template-columns: 5fr 1fr;
+        align-items:center;
+        
+    }
+    
+    #footer #foot ul{
+        font-size:14px;
+    
+        
+    }
+    
+    
+    #footer #foot ul li{
+        margin-bottom:0px;
+        
+    }
+    
+    #footer #foot  p{
+        margin-top:0px;
+        font-size:14px;
+    }
+
     #foot ul{
         display:grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr;

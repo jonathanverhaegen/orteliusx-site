@@ -3,6 +3,8 @@
 include_once("data.inc.php");
 
 
+
+
     
 
 
@@ -36,8 +38,8 @@ include_once("data.inc.php");
             <h5><?php echo strtoupper($p["title"])  ?></h5>
             <p><?php echo $p["info"] ?></p>
             <div id="prijzen_offerte">
-                <a href="">PRIJZEN</a>
-                <a href="">OFFERTE</a>
+                <a href="prijzen.php">PRIJZEN</a>
+                <a href="offerte.php?dienst=<?php echo $p["title"] ?>">OFFERTE</a>
             </div>
         </div>
         <?php endforeach; ?>
