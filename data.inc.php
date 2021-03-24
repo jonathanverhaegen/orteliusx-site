@@ -83,10 +83,10 @@ $promoties = [
             ];
 
             $prijzen = [
-                [ "titel" => "BASIC", "prijs" => "€397", "uitleg" => "Ideaal voor lichte opdrachten, snelle inspecties, ruw beeldmateriaal","info" => ["- Kleinschalige luchtopnames", "- Foto’s onroerend goed", "- Inspecties met ruw beeldmateriaal"]],
-                [ "titel" => "ADVANCED", "prijs" => "€659", "uitleg" => "Ideaal voor gedetailleerde inspecties, uitgebreide visuele kaarten, opmetingen, schadeclaims", "info"=> ["- Gegenereerde van 2D/3D modellen", "- Ruimtebeheer", "- Cartografie", "Landbouw monitoring"] ],
-                [ "titel" => "ADVANCED+", "prijs" => "€>899", "uitleg" => "Ideaal voor het nemen van een all-in-one formule", "info"=>["- Gaat verder op de Advanced opdrachten", "- Toevoeging van rapporten bij observaties en inspecties", "- Toevoeging videoproductie bij opnames van beeldmateriaal"] ],
-                [ "titel" => "OP MAAT", "prijs" => "Variabel", "uitleg" => "Wij kunnen onze aanbiedingen aanpassen op maat van uw behoeften", "info"=>["Indien u een ander concept in gedachten heeft of afwijkingen treden op, aarzel dan niet om ons te contacteren. Wij maken voor u een aangepaste offerte en werken samen naar een gepersonaliseerd resultaat."] ]
+                "basic" => [ "titel" => "BASIC", "prijs" => "€397", "uitleg" => "Ideaal voor lichte opdrachten, snelle inspecties, ruw beeldmateriaal","info" => ["- Kleinschalige luchtopnames", "- Foto’s onroerend goed", "- Inspecties met ruw beeldmateriaal"]],
+                "advanced" =>[ "titel" => "ADVANCED", "prijs" => "€659", "uitleg" => "Ideaal voor gedetailleerde inspecties, uitgebreide visuele kaarten, opmetingen, schadeclaims", "info"=> ["- Gegenereerde van 2D/3D modellen", "- Ruimtebeheer", "- Cartografie", "- Landbouw monitoring"] ],
+                "advancedplus" =>[ "titel" => "ADVANCED+", "prijs" => "€>899", "uitleg" => "Ideaal voor het nemen van een all-in-one formule", "info"=>["- Gaat verder op de Advanced opdrachten", "- Toevoeging van rapporten bij observaties en inspecties", "- Toevoeging videoproductie bij opnames van beeldmateriaal"] ],
+                "op maat" =>[ "titel" => "OP MAAT", "prijs" => "Variabel", "uitleg" => "Wij kunnen onze aanbiedingen aanpassen op maat van uw behoeften", "info"=>["Indien u een ander concept in gedachten heeft of afwijkingen treden op, aarzel dan niet om ons te contacteren. Wij maken voor u een aangepaste offerte en werken samen naar een gepersonaliseerd resultaat."] ]
                 
             ];
 

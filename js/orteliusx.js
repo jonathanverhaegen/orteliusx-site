@@ -60,3 +60,38 @@ document.querySelector("#link_diensten").addEventListener("click", function(e){
 
 })
 
+
+//modal
+
+let btns = document.querySelectorAll("#btn_mobile");
+let modal = document.querySelector(".modal");
+let kruisje = document.querySelector(".close");
+
+let prijzenContainer = document.querySelector("#container_prijzen")
+
+
+
+btns.forEach((btn)=>{
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        let klasse = e.target.getAttribute("class");
+        window.location.href = `prijzen.php?prijs=${klasse}`;
+    })
+})
+
+
+// btn.addEventListener("click", function(e){
+//     e.preventDefault();
+//     modal.style.display = "block";
+// })
+
+kruisje.addEventListener("click", function(){
+    modal.style.display = "none";
+})
+
+window.addEventListener("click", function(event){
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+})
+

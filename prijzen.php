@@ -2,6 +2,14 @@
 
 include_once("data.inc.php");
 
+if(!empty($_GET["prijs"])){
+    $p = $_GET["prijs"];
+
+    $prijs = $prijzen[$p];
+
+    
+}
+
 
 
 ?><!DOCTYPE html>
@@ -18,7 +26,26 @@ include_once("data.inc.php");
 
 <?php include_once("header.inc.php"); ?>
 
-    <div></div>
+<?php if(!empty($_GET["prijs"])): ?>
+
+    <div class="modal">
+<span class="close">&times;</span>
+
+            <div id="modal_prijzen">
+                
+                <h5><?php echo $prijs["titel"] ?></h5>
+                <p class="prijs"><?php echo $prijs["prijs"] ?></p>
+                <p class="uitleg"><?php echo $prijs["uitleg"] ?></p>
+                <ul class="infoPrijs">
+                    <?php foreach($prijs["info"] as $i): ?>
+                    <li><?php echo $i?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <a class="btn_desk" href="offerte.php">OFFERTE</a>
+            </div>
+        </div>
+
+<?php endif; ?>
 
     <div id="container_prijzen">
         <div id="container_titels">
@@ -27,18 +54,25 @@ include_once("data.inc.php");
 
         <div id="container_uitleg_mob">
 
-            <?php foreach($prijzen as $p): ?>
+            <?php foreach($prijzen as $key =>$p): ?>
 
 
                 <div id="uitleg_prijzen">
                     <h5><?php echo $p["titel"] ?></h5>
                     <p><?php echo $p["prijs"] ?></p>
-                    <a class="btn_mobile" href="">MEER INFO</a>
+                    <a id="btn_mobile" class="<?php echo $key; ?>" href="prijzen.php?prijs=<?php echo $key; ?>">MEER INFO</a>
                     
                 </div>
 
             <?php endforeach; ?>
     </div>
+
+    
+
+
+
+
+
 
         <div id="container_uitleg_desk">
 
