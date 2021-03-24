@@ -37,11 +37,10 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
     <div id="diensten_mob" >
         <h2>DIENSTEN</h2>
         <ul class="lijst_diensten">
-            <li><a href="promotie&raportage.php#foto- en actie videografie">FOTO - EN ACTIE VIDEOGRAFIE</a></li>
+            <li><a href="promotie&raportage.php#actie videografie">ACTIE VIDEOGRAFIE</a></li>
             <li><a href="observatie&onderzoek.php#gis cartografie">GIS CARTOGRAFIE</a></li>
             <li><a href="inspectie.php">INSPECTIE </a></li>
             <li><a href="observatie&onderzoek.php#orthografische foto's">ORTHOGRAFISCHE FOTO’S</a></li>
-            <li><a href="">3D MODELLEN</a></li>
             <li><a href="observatie&onderzoek.php#landbouw monitoring">LANDBOUW MONITORING</a></li>
             <li><a href="observatie&onderzoek.php#schadeclaim opmetingen">SCHADE OPMETING</a></li>
             <li><a href="observatie&onderzoek.php#volume berekening">VOLUME BEREKENING</a></li>

@@ -14,6 +14,7 @@ if(!empty($_GET["dienst"])){
 
 
 
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,11 +41,11 @@ if(!empty($_GET["dienst"])){
 
             <div class="grid">
 
-<div class="grid_text">
+    <div class="grid_text">
 
-    <p>Wil u meer informatie of heeft u vragen over onze diensten? Aarzel dan niet om contact op te nemen.</p>
+    <p>Vraag hier vrijblijvend uw offerte aan.</p>
 
-    <div class="info">
+    <!-- <div class="info">
         <p>TEL: 0478527796</p>
         <p>E-MAIL: info@orteliusx.be</p>
 
@@ -54,18 +55,30 @@ if(!empty($_GET["dienst"])){
         <p>Driesstraat 87 </p>
         <p>3461 Bekkevoort</p>
         <p>BTW BE0755.913.872</p>
-    </div>
+    </div> -->
 
     </div>
 
 
                 <div class="contact">
-                    <h6>ONLINE CONTACT FORMULIER</h6>
+                    <h6>ONLINE OFFERTE AANVRAAG</h6>
+
+                    <?php if(!empty($_POST)): ?>
+
+                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk je bericht</p>
+                    <div class="bedankt_div" ></div>
+
+                    <?php endif; ?>
+
+                    <?php if(empty($_POST)): ?>
 
                     <form action="" method="post">
 
                     <label for="name">Naam</label>
                     <input type="text" id="name" name="name" >
+
+                    <label for="ondernummer">Ondernemingsnummer</label>
+                    <input type="text" id="ondernummer" name="ondernummer" >
 
                     <label for="email">E-mailadress</label>
                     <input type="text" id="email" name="email" >
@@ -103,7 +116,7 @@ if(!empty($_GET["dienst"])){
 
 
                     </form>
-
+                    <?php endif; ?>
 
                 </div>
 

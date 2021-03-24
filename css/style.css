@@ -443,6 +443,14 @@ h1{
     margin-right:auto;
 }
 
+.bedankt{
+    padding-top:50px;
+}
+
+.bedankt_div{
+    height:100px;
+}
+
 .info{
     padding-top:5px;
     color:#0939DE;
@@ -518,37 +526,39 @@ input[type=submit]{
 
 
 
-#footer{
+footer{
     background-color:#F2F2F2;
     border:2px;
     border-top-style:solid;
     border-top-color: #0939DE;
     padding-top:30px;
     margin-top:50px;
+    width:100%;
+    
     
 
 }
 
-#footer #foot {
+footer #foot {
     width:80%;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:50px;
 }
 
-#footer #foot ul{
+footer #foot ul{
     font-size:14px;
 
     
 }
 
 
-#footer #foot ul li{
+footer #foot ul li{
     margin-bottom:7px;
     
 }
 
-#footer #foot  p{
+footer #foot  p{
     margin-top:15px;
     font-size:14px;
 }
@@ -670,15 +680,17 @@ input[type=submit]{
     #diensten_desk .dienst_desk p{
         font-size:small;
         margin-top:5px;
+        text-align:left;
     }
 
     #diensten_desk .dienst_desk h5{
         margin-top:10px;
+        text-align:left;
         
     }
 
     #diensten_desk .dienst_desk img:hover{
-        filter: grayscale(1);
+        filter: sepia(100%) hue-rotate(190deg) saturate(550%);
     }
 
 
@@ -811,6 +823,16 @@ input[type=submit]{
         grid-column-start: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 6px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .bedankt{
+        padding-top:100px;
+    }
+
+    .bedankt_div{
+        height:400px;
     }
 
     #background #container_contact .grid .grid_text {
@@ -850,28 +872,30 @@ input[type=submit]{
 
    
     
-    #footer #foot {
+    footer #foot {
         display:grid;
         grid-template-columns: 5fr 1fr;
         align-items:center;
         
     }
     
-    #footer #foot ul{
+    footer #foot ul{
         font-size:14px;
     
         
     }
     
     
-    #footer #foot ul li{
+    footer #foot ul li{
         margin-bottom:0px;
         
     }
     
-    #footer #foot  p{
+    footer #foot  p{
         margin-top:0px;
         font-size:14px;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
     }
 
     #foot ul{
@@ -884,6 +908,8 @@ input[type=submit]{
     .modal{
         display:none;
     }
+
+    
 
     
 

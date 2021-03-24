@@ -73,6 +73,16 @@ if(!empty($_POST)){
                 <div class="contact">
                     <h6>ONLINE CONTACT FORMULIER</h6>
 
+                    <?php if(!empty($_POST)): ?>
+
+                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk je bericht</p>
+                    <div class="bedankt_div" ></div>
+
+                    <?php endif; ?>
+
+
+                    <?php if(empty($_POST)): ?>
+
                     <form action="" method="post">
 
                     <label for="name">Naam</label>
@@ -93,6 +103,8 @@ if(!empty($_POST)){
 
                     </form>
 
+                    <?php endif; ?>
+
 
                 </div>
 
@@ -107,6 +119,8 @@ if(!empty($_POST)){
 
 
     </div>
+
+    
 
     <?php include_once("footer.inc.php"); ?>
 

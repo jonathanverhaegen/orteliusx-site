@@ -3,7 +3,7 @@
 $promoties = [
     "foto- en actie videografie" => [
         "image" => "images/1.JPG",
-        "title" => "foto- en actie videografie",
+        "title" => "actie videografie",
         "info" => "Met de First-Person-View (FPV) vaardigheid van de piloot, brengen we u unieke actiebeelden dat een meeslepende dimensie toevoegt aan de productie.",
         "catagorie" => "Promoties & rapportage"
     ],
@@ -18,12 +18,7 @@ $promoties = [
         "title" => "onroerend",
         "info" => "Het in beeld brengen van percelen in 2D of 3D bevorderd sensatie en inlevingsvermogen naar uw klant toe. Het biedt een creatieve werkmethode aan die in vastgoedkantoren meer-en-meer worden toegepast.",
         "catagorie" => "Promoties & rapportage"
-    ],
-    "3d modellen" => [
-        "image" => "images/1.JPG",
-        "title" => "3d modellen",
-        "info" => "lorem ipsum",
-        "catagorie" => "Promoties & rapportage"]
+    ]
     ];
 
     $observaties = [
