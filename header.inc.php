@@ -1,8 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrteliusX</title>
+    <link rel="icon" href="link">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 <header>
     <nav>
 
         <div class="logo">
-            <img src="images/logo.svg" alt="logo">
+            <img src="images/logo2.svg" alt="logo">
         </div>
 
             <input type="checkbox" id="hamburger" >

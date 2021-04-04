@@ -1,14 +1,15 @@
 *{
     box-sizing: border-box;
     
-    
 }
+
+
 
 
 header {
     background-color: #F2F2F2;
     height:75px;
-    border-bottom: 2px solid #0939DE;
+    border-bottom: 4px solid #0939DE;
     position: fixed;
     width:100%;
     z-index:10;
@@ -34,7 +35,7 @@ body{
     background-attachment: fixed;
     background-size: 1000px;
     background-position-x: center;
-    font-family: Helvetica, Sans-Serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -97,24 +98,26 @@ body{
 
 
 h1{
-    font-family: Helvetica, Sans-Serif;
+    
     color: white;
     font-size: 14pt;
     text-align: center;
-    top:300px;
+    top:390px;
     position: fixed;
     z-index:-1;
     width:100%;
     margin-left:auto;
     margin-right:auto;
+    font-style:italic;
+    font-weight:300;
 }
 
 
 #container{
     background-color:white;
     position: relative;
-    top:700px;
-    padding-top:100px;
+    top:800px;
+    padding-top:25px;
 }
 
 #container #intro p{
@@ -138,7 +141,7 @@ h1{
 }
 
 #diensten_mob {
-    margin-top:50px;
+    margin-top:25px;
     width:80%;
     margin-left:auto;
     margin-right:auto;
@@ -149,6 +152,8 @@ h1{
 #diensten_mob h2 {
     font-size:30px;
     margin-bottom:20px;
+    border-bottom: solid black 2px;
+    padding-bottom:5px;
     
 }
 
@@ -172,7 +177,7 @@ h1{
 }
 
 #container_diensten #container_titels{
-    width:80%;
+    width:90%;
     margin-left:auto;
     margin-right:auto;
 
@@ -181,21 +186,24 @@ h1{
 
 #container_diensten #container_titels h3{
     font-size:medium;
+    font-style:italic;
 }
 
 #container_diensten #container_titels h4{
     font-size:22px;
-    border-bottom: solid black 2px;
-    padding-bottom: 5px;
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
     padding-top:5px;
+    
 }
 
 #container_diensten #uitleg_dienst{
-    width:80%;
-    padding-top:20px;
+    width:90%;
+    padding-top:5px;
     margin-left:auto;
     margin-right:auto;
-    padding-bottom:20px;
+    border-bottom: black solid 1px;
+    margin-bottom:60px;
 }
 
 #container_diensten #uitleg_dienst img {
@@ -208,12 +216,15 @@ h1{
 
 #container_diensten #uitleg_dienst h5{
     margin-top:10px;
+    font-size:26px;
 }
 
 
 #container_diensten #uitleg_dienst p{
     font-size:small;
-    margin-top:5px;
+    margin-top:10px;
+    text-align: left;
+    line-height:18px;
 }
 
 #container_diensten #uitleg_dienst #prijzen_offerte{
@@ -296,12 +307,16 @@ h1{
 #container_prijzen #uitleg_prijzen h5{
     
     text-align:center;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 #container_prijzen #uitleg_prijzen p{
     margin-bottom:100px;
     text-align:center;
     padding-top:5px;
+    padding-top: 10px;
+    font-size: 18px;
 }
 
 #container_prijzen #uitleg_prijzen a{
@@ -323,6 +338,8 @@ h1{
     margin-right:auto;
     padding-top:20px;
     padding-bottom:50px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 #container_prijzen #container_uitleg_desk{
@@ -361,7 +378,7 @@ h1{
     padding: 10px;
 }
 
-#modal_prijzen h5, #modal_prijzen p, a{
+#modal_prijzen h5, #modal_prijzen p, #modal_prijzen a{
     text-align:center;
     margin-bottom: 20px;
 }
@@ -386,7 +403,7 @@ h1{
     padding:5px;
     text-align: center;
     margin-top: 20px;
-    text-align:center;
+    
 }
 
 .close{
@@ -432,15 +449,21 @@ h1{
 }
 
 #container_contact #container_titels h4{
-    font-size:22px;
-    border-bottom: solid black 2px;
-    padding-bottom: 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 30px;
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 #container_contact p{
     width:100%;
     margin-left:auto;
     margin-right:auto;
+    text-align: left;
+    font-size:20px;
 }
 
 .bedankt{
@@ -476,26 +499,58 @@ h1{
     padding-bottom:20px;
 }
 
-.contact h6{
+.contact h5{
     color:#0939DE;
     padding-bottom:20px;
     font-size: 1.5em;
 }
 
+.contact h6{
+    color: #0939DE;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    /* font-style: revert; */
+    font-family: helvetica;
+    text-transform: uppercase;
+}
+
+label{
+    font-size:22px;
+    padding-bottom:10px;
+}
 
 
 input[type=text], textarea, select{
     width: 100%; 
     padding: 12px; 
     background-color: #F2F2F2;
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+    margin-top: 10px; 
+    margin-bottom: 26px; 
     resize: vertical;
     border:none;
 }
 
 .btn{
-    display:grid
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    justify-content: center;
+    
+}
+
+.btn input{
+    text-decoration: none;
+    color: #0939DE;
+    
+    border: 2px;
+    border-style: solid;
+    border-color: #0939DE;
+    padding: 5px;
+    text-align: center;
+    background-color:white;
+    
+    
 }
 
 input[type=submit]{
@@ -527,8 +582,8 @@ input[type=submit]{
 
 
 footer{
-    background-color:#F2F2F2;
-    border:2px;
+    background-color:#E5E5E5;
+    border:4px;
     border-top-style:solid;
     border-top-color: #0939DE;
     padding-top:30px;
@@ -540,7 +595,7 @@ footer{
 }
 
 footer #foot {
-    width:80%;
+    width:90%;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:50px;
@@ -571,6 +626,10 @@ footer #foot  p{
 
 
 @media(min-width:700px){
+
+    header{
+        height:50px;
+    }
     
     .menu_mob{
         display:none;
@@ -592,9 +651,16 @@ footer #foot  p{
         width:250px;
     }
 
+    .logo img{
+        height :2.2em;
+    }
+
     nav{
         display:flex;
         align-items: center;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
         
     }
 
@@ -603,7 +669,7 @@ footer #foot  p{
     }
 
     h1{
-        font-size: 50px;
+        font-size: 75px;
     }
 
     .menu_diensten{
@@ -622,8 +688,8 @@ footer #foot  p{
     .menu_desk{
         
         display:flex;
-        gap:50px;
-        margin-right:10%;
+        gap:30px;
+        
         
     }
 
@@ -649,12 +715,13 @@ footer #foot  p{
     }
 
     #diensten_desk{
-        width:95%;
+        width:90%;
         margin-left:auto;
         margin-right:auto;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-around;
+        justify-content: center;
+        gap:50px;
         
     }
 
@@ -663,7 +730,8 @@ footer #foot  p{
         margin-top:20px;
         display:grid;
         justify-content: center;
-        padding:5px;
+        
+        
         
         
     }
@@ -674,39 +742,45 @@ footer #foot  p{
     }
 
     #diensten_desk .dienst_desk img{
-        width:250px;
+        width:100%;
     }
 
     #diensten_desk .dienst_desk p{
-        font-size:small;
+        
         margin-top:5px;
         text-align:left;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
     }
 
     #diensten_desk .dienst_desk h5{
         margin-top:10px;
         text-align:left;
+        font-size:26px;
         
     }
 
     #diensten_desk .dienst_desk img:hover{
-        filter: sepia(100%) hue-rotate(190deg) saturate(550%);
+        filter: sepia(100%) hue-rotate(190deg) saturate(650%) contrast(1.3) brightness(0.8);
     }
 
 
     #container_diensten #container_titels h4{
-        margin-bottom:20px;
+        margin-bottom:50px;
         text-transform: uppercase;
-        margin-top:10px;
+        margin-top:5px;
         font-size: 30px;
     }
 
 
     #container_diensten #uitleg_dienst{
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
+    
 
     #container_diensten #uitleg_dienst h5{
         grid-column-start: 1;
@@ -718,12 +792,16 @@ footer #foot  p{
     #container_diensten #uitleg_dienst p{
         grid-column-start: 1;
         grid-row-start: 1;
-        margin-top:35px;
+        margin-top: 50px;
+        margin-right: 100px;
     }
 
     #container_diensten #uitleg_dienst #prijzen_offerte{
         grid-column: 1;
         grid-row-start: 3;
+        height: 45%;
+        align-self: end;
+        font-weight: 500;
         
     }
 
@@ -732,12 +810,14 @@ footer #foot  p{
         align-content: center;
         margin-top:25px;
         margin-bottom:25px;
+        padding:5%;
+        font-weight:500px;
     }
 
     #container_diensten #uitleg_dienst img{
-        grid-column: 2;
+        grid-column: 2 / span 2;
         grid-row: 1 / span 3;
-        width:80%;
+        width:100%;
         margin-right: 0;
         
     }
@@ -748,6 +828,7 @@ footer #foot  p{
         margin-right:auto;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 25px;
         
     }
 
@@ -825,6 +906,7 @@ footer #foot  p{
         grid-gap: 6px;
         height: auto;
         padding-bottom: 50px;
+        padding-top:25px;
     }
 
     .bedankt{
@@ -842,7 +924,7 @@ footer #foot  p{
 
     #background #container_contact .grid .contact {
         padding-top: 0px;
-        grid-column: 4 / span 2;
+        grid-column: 3 / span 3 ;
         border-left: solid black 2px;
         padding-left:20px;
     }

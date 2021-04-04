@@ -33,6 +33,7 @@ if(!empty($_POST)){
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -71,7 +72,7 @@ if(!empty($_POST)){
 
 
                 <div class="contact">
-                    <h6>ONLINE CONTACT FORMULIER</h6>
+                    <h5>ONLINE CONTACT FORMULIER</h5>
 
                     <?php if(!empty($_POST)): ?>
 
@@ -85,6 +86,8 @@ if(!empty($_POST)){
 
                     <form action="" method="post">
 
+                    
+
                     <label for="name">Naam</label>
                     <input type="text" id="name" name="name" >
 
@@ -93,6 +96,9 @@ if(!empty($_POST)){
 
                     <label for="phone">Telefoonnummer</label>
                     <input type="text" id="phone" name="phone" >
+
+                    <label for="onderwerp">Onderwerp</label>
+                    <input type="text" id="onderwerp" name="onderwerp">
 
                     <label for="message">Bericht</label>
                     <textarea type="text" id="message" name="message" style="height:200px;" ></textarea>

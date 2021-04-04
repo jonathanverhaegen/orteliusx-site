@@ -14,6 +14,8 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -25,13 +27,13 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
 
 <div id="container">
 
-    <div id=intro>
+    <!-- <div id=intro>
         <p>Captatie van dronebeelden bezorgt uw project een verscheidenheid aan voordelen! Het is een uitstekende manier om sensatie en meeslependheid over te brengen en al zeker als u beroep doet op onze FPV-technieken.<br><br>
 
             Heeft uw project nood aan overzicht, inspectie of monitoring? Vanuit de lucht bieden wij u een 360°-view van het te observeren goed. Ook karteren van uw project biedt organisatorische mogelijkheden in het ontwikkelen van uw algemeen ruimtebeheer.<br><br>
             
             Gelicenseerde piloten gaan met u in samenwerking zodat een uitstekend resultaat kan bekomen worden. </p>
-    </div>
+    </div> -->
 
 
     <div id="diensten_mob" >

@@ -24,6 +24,7 @@ if(!empty($_GET["dienst"])){
     <link rel="icon" href="link">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -61,7 +62,7 @@ if(!empty($_GET["dienst"])){
 
 
                 <div class="contact">
-                    <h6>ONLINE OFFERTE AANVRAAG</h6>
+                    <h5>ONLINE OFFERTE AANVRAAG</h5>
 
                     <?php if(!empty($_POST)): ?>
 
@@ -74,17 +75,38 @@ if(!empty($_GET["dienst"])){
 
                     <form action="" method="post">
 
+                    <h6>Persoongegevens</h6>
+
                     <label for="name">Naam</label>
                     <input type="text" id="name" name="name" >
-
-                    <label for="ondernummer">Ondernemingsnummer</label>
-                    <input type="text" id="ondernummer" name="ondernummer" >
 
                     <label for="email">E-mailadress</label>
                     <input type="text" id="email" name="email" >
 
                     <label for="phone">Telefoonnummer</label>
                     <input type="text" id="phone" name="phone" >
+
+                    <h6>Bedrijfsgegevens</h6>
+
+                    <label for="bedrijfsnaam">Bedrijfsnaam</label>
+                    <input type="text" id="bedrijfsnaam" name="bedrijfsnaam" >
+
+                    <label for="ondernummer">Ondernemingsnummer</label>
+                    <input type="text" id="ondernummer" name="ondernummer" >
+
+                    <label for="street">Straat</label>
+                    <input type="text" id="street" name="street" >
+
+                    <label for="housenumber">Huisnummer</label>
+                    <input type="text" id="housenumber" name="housenumber" >
+
+                    <label for="city">Stad</label>
+                    <input type="text" id="city" name="city" >
+
+                    <label for="postalcode">Postcode</label>
+                    <input type="text" id="postalcode" name="postalcode" >
+
+                    <h6>Offerte</h6>
 
                     <label for="onderwerp">Onderwerp</label>
                     <select id="onderwerp" name="onderwerp">

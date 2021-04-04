@@ -42,21 +42,43 @@ document.querySelector(".logo").addEventListener("click", function(e){
 
 //menu verspingt
 
+let diensten = document.querySelector("#link_diensten");
 let prijzen = document.querySelector("#link_prijzen");
 let offerte = document.querySelector("#link_offerte");
 let contact = document.querySelector("#link_contact");
 let menu_diensten = document.querySelector(".menu_diensten");
 
-document.querySelector("#link_diensten").addEventListener("click", function(e){
-    e.preventDefault();
-    
-    prijzen.style.display = "none";
-    offerte.style.display = "none";
-    contact.style.display = "none";
+let count = 0;
 
-    menu_diensten.style.display = "flex";
-    menu_diensten.style.gap = "50px";
-    menu_diensten.style.marginRight = "15%";
+diensten.addEventListener("click", function(e){
+    e.preventDefault();
+
+    if(count == 0){
+        prijzen.style.display = "none";
+        offerte.style.display = "none";
+        contact.style.display = "none";
+        // diensten.style.position ="relative";
+        // diensten.style.left = "-150px";
+
+        menu_diensten.style.display = "flex";
+        menu_diensten.style.gap = "30px";
+        menu_diensten.style.marginRight = "30px";
+        diensten.innerHTML = "&times";
+        diensten.style.fontSize = "30px";
+        count = 1;
+    }else{
+        diensten.innerHTML = "DIENSTEN";
+        
+       
+        menu_diensten.style.display = "none";
+        prijzen.style.display = "block";
+        offerte.style.display = "block";
+        contact.style.display = "block";
+        diensten.style.fontSize = "1em";
+        count = 0;
+    }
+    
+    
 
 })
 
