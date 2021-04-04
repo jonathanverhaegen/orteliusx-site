@@ -44,7 +44,7 @@ if(!empty($_GET["dienst"])){
 
     <div class="grid_text">
 
-    <p>Vraag hier vrijblijvend uw offerte aan.</p>
+    <p>Vraag hier vrijblijvend uw offerte aan. Wij antwoorden doorgaans binnen de 48 uur.</p>
 
     <!-- <div class="info">
         <p>TEL: 0478527796</p>
@@ -80,7 +80,7 @@ if(!empty($_GET["dienst"])){
                     <label for="name">Naam</label>
                     <input type="text" id="name" name="name" >
 
-                    <label for="email">E-mailadress</label>
+                    <label for="email">E-mailadres</label>
                     <input type="text" id="email" name="email" >
 
                     <label for="phone">Telefoonnummer</label>

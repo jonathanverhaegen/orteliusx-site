@@ -91,7 +91,7 @@ if(!empty($_POST)){
                     <label for="name">Naam</label>
                     <input type="text" id="name" name="name" >
 
-                    <label for="email">E-mailadress</label>
+                    <label for="email">E-mailadres</label>
                     <input type="text" id="email" name="email" >
 
                     <label for="phone">Telefoonnummer</label>

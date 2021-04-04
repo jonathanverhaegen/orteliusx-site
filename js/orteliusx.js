@@ -9,18 +9,21 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
     var checkbox = document.querySelector('#hamburger').checked;
     var afbeelding = document.querySelector(".img_hamburger");
     var position = document.querySelector('.menu_mob').style;
+    let header =  document.querySelector("header");
 
     
     
     if(checkbox == true){
         afbeelding.src = "images/kruis.svg";
         position.top = "50px";
+        header.style.border = "none";
         
         
        
     }else if(checkbox == false){
         afbeelding.src = "images/hamburger.svg"; 
         position.top = "-1000px";
+        header.style.borderBottom = "3px solid #0939DE";
         
         
         
