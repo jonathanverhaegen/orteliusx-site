@@ -34,7 +34,27 @@ include_once("data.inc.php");
         <div id="uitleg_dienst">
             <span class="anchor" id="<?php echo $key ?>"></span>
             
-            <img src="<?php echo $i["image"] ?>" alt="foto">
+            <?php if($i["video"] != null): ?>
+
+                <video id="media_<?php echo $i["title"] ?>" autoplay loop src="<?php echo $i["video"] ?>">
+                <!-- <source src="<?php echo $i["video"] ?>" type="video/mp4"> -->
+                Your browser does not support the video tag.
+                </video>
+                <?php if($i["meer"] != null): ?>
+                <a class="prev" id="prev_<?php echo $i["title"] ?>">&#10094;</a>
+                <a class="next" id="next_<?php echo $i["title"] ?>" >&#10095;</a>
+                <?php endif; ?>
+
+            <?php else:?>
+
+                <img id="media"  src="<?php echo $i["image"] ?>" alt="foto">
+                
+                <?php if($i["meer"] != null): ?>
+                <a class="prev" id="prev_<?php echo $i["title"] ?>">&#10094;</a>
+                <a class="next" id="next_<?php echo $i["title"] ?>" >&#10095;</a>
+                <?php endif; ?>
+
+            <?php endif ?>
            
             <h5><?php echo strtoupper($i["title"])  ?></h5>
             <p><?php echo $i["info"] ?></p>

@@ -7,7 +7,7 @@
 
 
 header {
-    background-color: #F2F2F2;
+    background-color: #E5E5E5;
     height:50px;
     border-bottom: 3px solid #0939DE;
     position: fixed;
@@ -30,7 +30,7 @@ header {
 
 
 body{
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/header.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1000px;
@@ -75,7 +75,7 @@ body{
     background-color:#F2F2F2;
     position:absolute;
     width:100%;
-    padding-top:20px;
+    padding-top:5px;
     top:-1000px;
     border-bottom: 3px solid #0939DE;
 
@@ -99,12 +99,20 @@ body{
     z-index:10;
     border:2px;
     border-style:solid;
-    width:80%;
+    width:60%;
     margin-left:auto;
     margin-right:auto;
     padding:10px;
     color:#0939DE;
     border-color:#0939DE;
+    height:65px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_mob a:last-child{
+    margin-bottom:70px;
 }
 
 
@@ -224,11 +232,29 @@ h1{
     margin-bottom:60px;
 }
 
+.prev, .next{
+    position:relative;
+    z-index:1;
+    top:-150px;
+    width: auto;
+    color: #0939DE;
+    font-size: 25px;
+}
+
+.prev{
+    margin-left:5%;
+}
+
+.next{
+    float:right;
+    margin-right:5%;
+}
+
 #container_diensten #uitleg_dienst:last-child{
     border:none;
 }
 
-#container_diensten #uitleg_dienst img {
+#container_diensten #uitleg_dienst img,video {
     width:100%;
     display: block;
     margin-left:auto;
@@ -382,7 +408,7 @@ h1{
     z-index: 1; /* Sit on top */
   
     left: 5%;
-    top: 25%;
+    top: 24%;
     width: 90%; /* Full width */
     /* box-shadow: 0px 0px 10px 5px #C2C2C2; */
     height:495px;
@@ -581,6 +607,13 @@ input[type=text], textarea, select{
     border:none;
 }
 
+.concept_info{
+    
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
 .btn{
     width:100%;
     margin-left:auto;
@@ -605,6 +638,10 @@ input[type=text], textarea, select{
     font-size:20px;
     height:50px;
     
+    
+}
+
+.btn input:hover{
     
 }
 
@@ -682,7 +719,9 @@ footer #foot  p{
 
 
 
-@media(min-width:700px){
+
+
+@media(min-width:800px){
 
     header{
         height:50px;
@@ -706,6 +745,8 @@ footer #foot  p{
 
     .logo  {
         width:250px;
+        align-items: center;
+        justify-content: left;
     }
 
     .logo img{
@@ -872,7 +913,13 @@ footer #foot  p{
         font-weight:500px;
     }
 
-    #container_diensten #uitleg_dienst img{
+    #container_diensten #uitleg_dienst #prijzen_offerte  a:hover{
+       
+        color:white;
+        background-color:#0939DE;
+    }
+
+    #container_diensten #uitleg_dienst img,video{
         grid-column: 2 / span 2;
         grid-row: 1 / span 3;
         width:100%;
@@ -881,7 +928,7 @@ footer #foot  p{
     }
 
     #container_prijzen #container_uitleg_desk{
-        width:80%;
+        width:90%;
         margin-left:auto;
         margin-right:auto;
         display:grid;
@@ -892,11 +939,13 @@ footer #foot  p{
 
     #container_prijzen #uitleg_prijzen{
         background-color:white;
-        height: auto;
+        height: 600;
         border-right: solid black 1px;
         display:grid;
-        grid-template-rows: 5% 20% 20% 40% 15%;
-        padding:10px;
+        grid-template-rows: 5% 20% 30% 35% 10%;
+        padding:20px;
+        padding-left: 25px;
+        padding-right: 25px
     }
 
     #container_prijzen #uitleg_prijzen:hover{
@@ -904,11 +953,23 @@ footer #foot  p{
         
     }
 
-    #container_prijzen #uitleg_prijzen h5,p{
+    #container_prijzen #uitleg_prijzen h5{
         text-align:center;
+        font-size:30px;
+        font-weight:600;
+    }
+
+    #container_prijzen #uitleg_prijzen .prijs{
+        text-align:center;
+        font-size:26px;
         
     }
     
+    #container_prijzen #uitleg_prijzen .uitleg{
+        text-align:center;
+        font-size:22px;
+        
+    }
 
     
     #container_prijzen #uitleg_prijzen  a{
@@ -919,16 +980,40 @@ footer #foot  p{
         justify-content:center;
         align-items:center;
         font-weight:600;
+        ;
     }
     
     #container_prijzen #uitleg_prijzen .infoPrijs{
         width:90%;
         margin-left:auto;
         margin-right:auto;
+        list-style-type: circle;
+    }
+
+    #container_prijzen #uitleg_prijzen  a:hover{
+       
+        color:white;
+        background-color:#0939DE;
+    }
+
+    
+
+
+
+    #container_prijzen #uitleg_prijzen .infoPrijs li{
+        margin-bottom:8px;
+        line-height:150%;
+        font-weight:400;
     }
 
     #container_prijzen #uitleg_prijzen:last-child{
         border:none;
+        list-style-type: none;
+    }
+
+    #container_prijzen #uitleg_prijzen:last-child .infoPrijs{
+       
+        list-style-type: none;
     }
 
     
@@ -965,7 +1050,7 @@ footer #foot  p{
         grid-gap: 6px;
         height: auto;
         padding-bottom: 50px;
-        padding-top:25px;
+        padding-top:0px;
     }
 
     .bedankt{
@@ -985,10 +1070,15 @@ footer #foot  p{
     #background #container_contact .grid .contact {
         padding-top: 0px;
         grid-column: 3 / span 3 ;
-        border-left: solid black 2px;
-        padding-left:20px;
+        border-left: solid black 1px;
+        padding-left:50px;
         grid-row:1;
         padding-bottom:0px;
+    }
+
+    .btn input:hover{
+        color:white;
+        background-color:#0939DE;
     }
 
 
@@ -1040,6 +1130,7 @@ footer #foot  p{
         font-size:14px;
         border-left: 1px black solid;
         border-right: 1px black solid;
+        text-align: center;
     }
 
     #foot ul{
@@ -1053,7 +1144,42 @@ footer #foot  p{
         display:none;
     }
 
+
+    .prev, .next {
+        cursor: pointer;
+        /* position: absolute; */
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.3s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        z-index:1;
+      }
+
+    .prev{
+        grid-column-start:2;
+        grid-row-start: 2;
+        display:flex;
+        align-items:center;
+    }
+
+    .next{
+        grid-column-start:3;
+        grid-row-start: 2;
+        display:flex;
+        align-items:center;
+        justify-content: flex-end;
+    }
     
+    .prev:hover, .next:hover {
+        color: #0939DE;
+      }
 
     
 

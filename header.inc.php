@@ -37,7 +37,7 @@
 
         <div class="menu_diensten">
 
-            <a id="" href="promotie&rapportage.php">PROMOTIES & RAPPORTAGE</a>
+            <a id="" href="promoties&rapportage.php">PROMOTIES & RAPPORTAGE</a>
             <a id="" href="observatie&onderzoek.php">OBSERVATIES EN ONDERZOEK</a>
             <a id="" href="inspectie.php">INSPECTIE</a>
         

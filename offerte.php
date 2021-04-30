@@ -9,7 +9,31 @@ if(!empty($_GET["dienst"])){
     
     
 }else{
-    $diensten = array_merge($promoties, $observaties, $inspecties);
+    // $diensten = array_merge($promoties, $observaties, $inspecties);
+}
+
+
+if(!empty($_POST)){
+
+    $name = $_POST["name"];
+    $mailFrom = $_POST["email"];
+    $phone= $_POST["phone"];
+    $company = $_POST["bedrijfsnaam"];
+    $number = $_POST["ondernummer"];
+    $street = $_POST["street"];
+    $housenumber = $_POST["housenumber"];
+    $city = $_POST["city"];
+    $postalcode = $_POST["postalcode"];
+    $subject = $_POST["onderwerp"];
+    $message = $_POST["message"];
+    $location = $_POST["location"];
+
+    $mailTo = "offerte@orteliusx.be";
+    $headers = "From: ".$mailFrom;
+
+    $text = "You have recieved a mail from ".$name.".\n\n".$phone."\n\n".$company."\n".$number."\n\n".$street." ".$housenumber."\n".$postalcode."  ".$city."\n\n".$location."\n\n".$message;
+
+    mail($mailTo, $subject, $text, $headers);
 }
 
 
@@ -66,7 +90,7 @@ if(!empty($_GET["dienst"])){
 
                     <?php if(!empty($_POST)): ?>
 
-                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk je bericht</p>
+                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk uw bericht</p>
                     <div class="bedankt_div" ></div>
 
                     <?php endif; ?>
@@ -91,7 +115,7 @@ if(!empty($_GET["dienst"])){
                     <label for="bedrijfsnaam">Bedrijfsnaam</label>
                     <input type="text" id="bedrijfsnaam" name="bedrijfsnaam" >
 
-                    <label for="ondernummer">Ondernemingsnummer</label>
+                    <label for="ondernummer">Btw-nummer</label>
                     <input type="text" id="ondernummer" name="ondernummer" >
 
                     <label for="street">Straat</label>
@@ -111,7 +135,6 @@ if(!empty($_GET["dienst"])){
                     <label for="onderwerp">Onderwerp</label>
                     <select id="onderwerp" name="onderwerp">
 
-                    
 
                         <?php if(!empty($_GET["dienst"])):?>
                             <option value="<?php echo $diensten ?>"><?php echo $diensten ?></option>
@@ -127,8 +150,13 @@ if(!empty($_GET["dienst"])){
 
                     </select>
 
+                    <label for="location">Locatie</label>
+                    <p style="font-size: 14px;" class ="concept_info">Vul hier het adres in waar de opdracht doorgaat</p>
+                    <input type="text" id="location" name="location" >
 
-                    <label for="message">Bericht</label>
+
+                    <label for="message">Concept van opdracht</label>
+                    <p style="font-size: 14px;" class ="concept_info">Geef hier meer informatie over de opdracht</p>
                     <textarea type="text" id="message" name="message" style="height:200px;" ></textarea>
 
                     <div class="btn">

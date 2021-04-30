@@ -10,13 +10,15 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
     var afbeelding = document.querySelector(".img_hamburger");
     var position = document.querySelector('.menu_mob').style;
     let header =  document.querySelector("header");
+    let logo = document.querySelector(".logo");
 
     
     
     if(checkbox == true){
         afbeelding.src = "images/kruis.svg";
-        position.top = "50px";
+        position.top = "30px";
         header.style.border = "none";
+        logo.style.display = "none";
         
         
        
@@ -24,6 +26,7 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
         afbeelding.src = "images/hamburger.svg"; 
         position.top = "-1000px";
         header.style.borderBottom = "3px solid #0939DE";
+        logo.style.display = "grid";
         
         
         
@@ -110,13 +113,182 @@ btns.forEach((btn)=>{
 //     modal.style.display = "block";
 // })
 
-kruisje.addEventListener("click", function(){
-    modal.style.display = "none";
-})
+if(kruisje != null){
+    kruisje.addEventListener("click", function(){
+        modal.style.display = "none";
+    })
+}
+
+
 
 window.addEventListener("click", function(event){
     if(event.target == modal){
         modal.style.display = "none";
     }
 })
+
+//slider bij diensten
+
+
+
+
+
+
+let container = document.querySelector("#container_titels").childNodes[3].innerHTML;
+
+
+
+
+if(container == "PROMOTIE EN RAPPORTAGE"){
+            //luchtopnames
+        let counter_lucht = 0;
+
+        let sources_lucht = ["videos/luchtopnames.mp4", "videos/luchtopnames2.mp4", "videos/luchtopnames3.mp4"]
+
+        let mediaLucht = document.querySelector("#media_luchtopnames");
+        
+
+
+        let next_lucht = document.querySelector("#next_luchtopnames");
+        let prev_lucht = document.querySelector("#prev_luchtopnames");
+
+        next_lucht.addEventListener("click", function(e){
+            
+        if(counter_lucht < 2){
+            counter_lucht+=1;
+            
+            mediaLucht.src = sources_lucht[counter_lucht];
+        }else{
+            counter_lucht = 0;
+            mediaLucht.src = sources_lucht[counter_lucht];
+        }
+        })
+
+        prev_lucht.addEventListener("click", function(e){
+            
+            if(counter_lucht > 0){
+            counter_lucht-=1;
+            console.log(counter_lucht);
+            mediaLucht.src = sources_lucht[counter_lucht];
+            }else{
+                counter_lucht = 2;
+                mediaLucht.src = sources_lucht[counter_lucht];
+                console.log(counter_lucht);
+            }
+        })
+
+        //onroerend
+
+        let counter_onroe = 0;
+
+        let sources_onroe = ["videos/onroerend.mp4","videos/onroerend1.mp4", "videos/onroerend2.mp4"]
+
+        let mediaOnroe = document.querySelector("#media_onroerend");
+        
+
+
+        let next_onroe = document.querySelector("#next_onroerend");
+        let prev_onroe = document.querySelector("#prev_onroerend");
+
+        next_onroe.addEventListener("click", function(e){
+            
+        if(counter_onroe < 2){
+            
+            counter_onroe+=1;
+            mediaOnroe.src = sources_onroe[counter_onroe];
+            
+            
+        }else{
+
+            counter_onroe = 0;
+            mediaOnroe.src = sources_onroe[counter_onroe];
+            
+        }
+        })
+
+        prev_onroe.addEventListener("click", function(e){
+            
+            if(counter_onroe > 0){
+            counter_onroe-=1;
+            
+            mediaOnroe.src = sources_onroe[counter_onroe];
+            }else{
+                counter_onroe = 2;
+                mediaOnroe.src = sources_onroe[counter_onroe];
+                
+            }
+        })
+    
+}
+
+if(container == "Observatie &amp; onderzoek"){
+    
+     //landbouw
+
+        let counter_land = 0;
+
+        let sources_land = ["videos/LBmonitoring.mp4","videos/LBmonitoring2.mp4"]
+        
+        let mediaLand = document.querySelector("#media_landbouwmonitoring");
+        
+        
+        
+        let next_land = document.querySelector("#next_landbouwmonitoring");
+        let prev_land = document.querySelector("#prev_landbouwmonitoring");
+        
+        next_land.addEventListener("click", function(e){
+            console.log("test");
+            if(counter_land < 1){
+            
+            counter_land+=1;
+            mediaLand.src = sources_land[counter_land];
+            
+            
+            }else{
+        
+                counter_land = 0;
+                mediaLand.src = sources_land[counter_land];
+                
+            }
+        })
+        
+        prev_land.addEventListener("click", function(e){
+            
+            if(counter_land > 0){
+            counter_land-=1;
+            
+            mediaLand.src = sources_land[counter_land];
+            }else{
+                counter_land = 1;
+                mediaLand.src = sources_land[counter_land];
+                
+            }
+        })
+
+
+
+
+    
+}
+
+if(container == "Inspectie"){
+    
+    
+}
+
+
+
+
+
+
+    
+    
+
+   
+
+
+
+
+
+
 

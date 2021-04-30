@@ -2,7 +2,7 @@
 
 include_once("data.inc.php");
 
-$diensten = array_merge($promoties, $observaties, $inspecties);
+
 
 
 ?><!DOCTYPE html>
@@ -39,13 +39,11 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
     <div id="diensten_mob" >
         <h2>DIENSTEN</h2>
         <ul class="lijst_diensten">
-            <li><a href="promotie&raportage.php#actie videografie">ACTIE VIDEOGRAFIE</a></li>
-            <li><a href="observatie&onderzoek.php#gis cartografie">GIS CARTOGRAFIE</a></li>
-            <li><a href="inspectie.php">INSPECTIE </a></li>
-            <li><a href="observatie&onderzoek.php#orthografische foto's">ORTHOGRAFISCHE FOTO’S</a></li>
-            <li><a href="observatie&onderzoek.php#landbouw monitoring">LANDBOUW MONITORING</a></li>
-            <li><a href="observatie&onderzoek.php#schadeclaim opmetingen">SCHADE OPMETING</a></li>
-            <li><a href="observatie&onderzoek.php#volume berekening">VOLUME BEREKENING</a></li>
+
+        <?php foreach($diensten as $key => $d): ?>
+            <li><a href="<?php echo $d["link"] ?>.php#<?php echo $key; ?>"><?php echo strtoupper($d['title'])  ?></a></li>
+        <?php endforeach; ?> 
+            
         </ul>
     </div>
 
@@ -54,40 +52,17 @@ $diensten = array_merge($promoties, $observaties, $inspecties);
 
     <div id="diensten_desk">
 
-    <?php foreach($promoties as $key => $p) :?>
+    <?php foreach($diensten as $key => $d) :?>
         <div class="dienst_desk">
-            <a href="promotie&rapportage.php#<?php echo $key; ?>">
-                <img src="<?php echo $p['image'] ?>" alt="diensten">
-                <p><?php echo strtoupper($p['catagorie'])  ?></p>
-                <h5><?php echo strtoupper($p['title'])  ?></h5>
+            <a href="<?php echo $d["link"] ?>.php#<?php echo $key; ?>">
+                <img src="<?php echo $d['image'] ?>" alt="diensten">
+                <p><?php echo strtoupper($d['catagorie'])  ?></p>
+                <h5><?php echo strtoupper($d['title'])  ?></h5>
             </a>
         </div>
 
         <?php endforeach; ?>
 
-    <?php foreach($observaties as $key => $o) :?>
-        <div class="dienst_desk">
-            <a href="observatie&onderzoek.php#<?php echo $key; ?>">
-                <img src="<?php echo $o['image'] ?>" alt="diensten">
-                <p><?php echo strtoupper($o['catagorie'])  ?></p>
-                <h5><?php echo strtoupper($o['title'])  ?></h5>
-            </a>
-        </div>
-
-    <?php endforeach; ?>
-
-    <?php foreach($inspecties as $key => $i) :?>
-        <div class="dienst_desk">
-            <a href="inspectie.php#<?php echo $key; ?>">
-                <img src="<?php echo $i['image'] ?>" alt="diensten">
-                <p><?php echo strtoupper($i['catagorie'])  ?></p>
-                <h5><?php echo strtoupper($i['title'])  ?></h5>
-            </a>
-        </div>
-
-    <?php endforeach; ?>
-
-    
 
 
     </div>

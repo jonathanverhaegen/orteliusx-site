@@ -36,8 +36,31 @@ include_once("data.inc.php");
         
         <?php foreach($observaties as $key => $o): ?>
         <div id="uitleg_dienst">
-        <span class="anchor" id="<?php echo $key ?>"></span>
-            <img  src="<?php echo $o["image"] ?>" alt="foto">
+            <span class="anchor" id="<?php echo $key ?>"></span>
+            
+            <?php if($o["video"] != null): ?>
+
+                <video id="media_<?php echo $key ?>" autoplay loop src="<?php echo $o["video"] ?>">
+                <!-- <source src="<?php echo $o["video"] ?>" type="video/mp4"> -->
+                Your browser does not support the video tag.
+                </video>
+                
+                <?php if($o["meer"] != null): ?>
+                <a class="prev" id="prev_<?php echo $key ?>">&#10094;</a>
+                <a class="next" id="next_<?php echo $key ?>" >&#10095;</a>
+                <?php endif; ?>
+
+            <?php else:?>
+
+                <img id="media"  src="<?php echo $o["image"] ?>" alt="foto">
+                
+                <?php if($o["meer"] != null): ?>
+                <a class="prev" id="prev_<?php echo $o["title"] ?>">&#10094;</a>
+                <a class="next" id="next_<?php echo $o["title"] ?>" >&#10095;</a>
+                <?php endif; ?>
+
+            <?php endif ?>
+           
             <h5><?php echo strtoupper($o["title"])  ?></h5>
             <p><?php echo $o["info"] ?></p>
             <div id="prijzen_offerte">

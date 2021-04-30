@@ -5,18 +5,21 @@ include_once("data.inc.php");
 
 
 if(!empty($_POST)){
-    
-    $to = "jonathan_verhaegen@hotmail.com";
 
-    $subject = `contact formulier van ${$_POST["name"]}`;
-    
+    $name = $_POST["name"];
+    $mailFrom = $_POST["email"];
+    $phone= $_POST["phone"];
+    $subject = $_POST["onderwerp"];
     $message = $_POST["message"];
     
-    $headers = "From: Toon van OrteliusX <jonathan_verhaegen@hotmail.com>\r\n";
-    $headers .= "Reply-To: jonathan_verhaegen@hotmail.com\r\n";
-    $headers .= "Content-type: text\html\r\n";
+    $mailTo = "info@orteliusx.be";
 
-    mail($to, $subject, $message, $headers);
+    $headers = "From: ".$mailFrom;
+    
+
+    $text = "You have recieved a mail from ".$name.".\n\n".$phone."\n\n".$message;
+
+    mail($mailTo, $subject, $text, $headers);
 
 
 
@@ -56,7 +59,7 @@ if(!empty($_POST)){
                 <p>Wil u meer informatie of heeft u vragen over onze diensten? Aarzel dan niet om contact op te nemen.</p>
             
                 <div class="info">
-                    <p>TEL: 0478527796</p>
+                    <p>TEL: 0478 52 77 96</p>
                     <p>E-MAIL: info@orteliusx.be</p>
 
                 </div>
@@ -76,7 +79,7 @@ if(!empty($_POST)){
 
                     <?php if(!empty($_POST)): ?>
 
-                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk je bericht</p>
+                    <p class="bedankt" >Bedankt voor ons te contacteren. We bekijken en beantwoorden zo snel mogelijk uw offerte</p>
                     <div class="bedankt_div" ></div>
 
                     <?php endif; ?>
