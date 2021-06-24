@@ -25,11 +25,13 @@
             <ul>
                 <li>Driesstraat 87 - 3461 Bekkevoort</li>
                 <li>TEL. 0478527796 </li>
-                <li>info@orteliusx.be</li>
+                <li><a class="foot__link" href="mailto:info@orteliusx.be">info@orteliusx.be</a></li>
+                
                 <li>BTW BE0755.913.872</li>
             </ul>
          
-            <p>Cookie/Privacy beleid</p>
+            
+            <a class="cookieLink" href="cookie-policy.php">Cookie/Privacy beleid</a>
             
         </div>
         
