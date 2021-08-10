@@ -56,24 +56,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="container">
 
-    <!-- <div id=intro>
-        <p>Captatie van dronebeelden bezorgt uw project een verscheidenheid aan voordelen! Het is een uitstekende manier om sensatie en meeslependheid over te brengen en al zeker als u beroep doet op onze FPV-technieken.<br><br>
-
-            Heeft uw project nood aan overzicht, inspectie of monitoring? Vanuit de lucht bieden wij u een 360°-view van het te observeren goed. Ook karteren van uw project biedt organisatorische mogelijkheden in het ontwikkelen van uw algemeen ruimtebeheer.<br><br>
-            
-            Gelicenseerde piloten gaan met u in samenwerking zodat een uitstekend resultaat kan bekomen worden. </p>
-    </div> -->
-
 
     <div id="diensten_mob" >
         <h2>DIENSTEN</h2>
-        <ul class="lijst_diensten">
 
-        <?php foreach($diensten as $key => $d): ?>
-            <li><a href="<?php echo $d["link"] ?>.php#<?php echo $key; ?>"><?php echo strtoupper($d['title'])  ?></a></li>
-        <?php endforeach; ?> 
+        <div class="mobile__dienst">
+            <p class="mobile__dienst__title">Promotie & Rapportage</p>
+            <img class="mobile__dienst__img" id="image--promotie" src="<?php echo $dienstprom["actie videografie"]["image"];?>" alt="">
             
-        </ul>
+            <form action="">
+            <div class="mobile__dienst__count">
+                <input id="btn--actie" type="radio" name="position" checked="checked" />
+                <input id="btn--luchtopnames" type="radio" name="position" />
+                <input id="btn--onroerend" type="radio" name="position" />
+            </div>
+            </form>
+            <div class="mobile__dienst__more">
+                <a class="btn--normal" href="promoties&rapportage.php">Meer info</a>
+            </div>
+        </div>
+
+
+        <div class="mobile__dienst">
+            <p class="mobile__dienst__title">Inspectie</p>
+            <img class="mobile__dienst__img" id="image--inspectie" src="<?php echo $dienstin["installaties"]["image"];?>" alt="">
+            <form action="">
+            <div class="mobile__dienst__count">
+                <input id="btn--installatie"  type="radio" name="position" checked="checked" />
+                <input id="btn--gebouw"  type="radio" name="position" />
+                <input id="btn--daken"  type="radio" name="position" />
+            </div>
+            </form>
+            <div class="mobile__dienst__more">
+                <a class="btn--normal" href="inspectie.php">Meer info</a>
+            </div>
+        </div>
+
+        <div class="mobile__dienst">
+            <p class="mobile__dienst__title">Observatie & onderzoek</p>
+            <img class="mobile__dienst__img" id="image--observatie" src="<?php echo $dienstob["orthografische foto's"]["image"];?>" alt="">
+            <form action="">
+            <div class="mobile__dienst__count">
+                <input id="btn--ortho" type="radio" name="position" checked="checked" />
+                <input id="btn--gis" type="radio" name="position" />
+                <input id="btn--schade" type="radio" name="position" />
+                <input id="btn--landbouw" type="radio" name="position" />
+                <input id="btn--volume" type="radio" name="position" />
+            </div>
+            </form>
+            <div class="mobile__dienst__more">
+                <a class="btn--normal" href="observatie&onderzoek.php">Meer info</a>
+            </div>
+        </div>
+        
     </div>
 
 
@@ -151,6 +186,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 
     <?php include_once("footer.inc.php"); ?>
+
+    <script src="js/slider.js"></script>
 
     
 </body>

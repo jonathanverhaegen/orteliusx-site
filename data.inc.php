@@ -22,8 +22,9 @@ $promoties = [
     "onroerend" => [
         "video" => "videos/onroerend.mp4",
         "title" => "onroerend",
-        "info" => "Breng de infrastructuur of troeven van uw eigendom onder de aandacht met luchtfotografie. Het biedt een uniek perspectief dat vaak als effect heeft het oog te vullen van de toeschouwer. Dit ter bevordering van de interesse bij uw klanten of partners. 
-        <br><br>Wij werken mee aan de productie door het aanleveren van beeldmateriaal, als ook het aanleveren van het eindproduct voor lichte videoproductie en promotie.
+        "info" => "Het in beeld brengen van percelen in 2D of 3D bevorderd het inzicht voor kopende- en aankopende partijen door sensatie en inlevingsvermogen te creëren naar uw klant toe. Het biedt een creatieve werkmethode aan die in vastgoedkantoren meer-en-meer worden toegepast.
+        <br><br>Met opnames vanuit de lucht kan u uw klanten snel overtuigen van uw aanbod. Het maken van een goed overzicht van het gehele terrein, focus op ‘unique selling points’ of zelfs een 3D model van het te capteren goed. 
+        <br><br>In samenwerking zorgen we ervoor dat uw aanbod beter opvalt voor uw cliënteel. 
         ",
         "catagorie" => "Promoties & rapportage",
         "meer" => "ja"

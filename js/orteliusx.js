@@ -16,9 +16,10 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
     
     if(checkbox == true){
         afbeelding.src = "images/kruis.svg";
-        position.top = "30px";
-        header.style.border = "none";
-        logo.style.display = "none";
+        position.top = "0px";
+        position.height = "100%";
+        // header.style.border = "none";
+        // logo.style.display = "none";
         
         
        
@@ -32,11 +33,24 @@ document.querySelector("#hamburger").addEventListener("click", function(e){
         
     }
 
-    $("a").click(function(e){
-        
-        
-        afbeelding.src = "images/hamburger.svg"; 
-        position.top = "-1000px";
+    document.querySelector(".dienstClick").addEventListener('click', (e) =>{
+        e.preventDefault();
+
+        let dienst = document.querySelector(".dienstClick");
+        let prijs = document.querySelector(".dienstClick2");
+        let offerte = document.querySelector(".dienstClick3");
+        let contact = document.querySelector(".dienstClick4");
+
+        dienst.innerHTML = "Promoties & rapportage";
+        dienst.style.fontSize = "20px";
+        dienst.addEventListener("click", (f) =>{f.preventDefault(); window.location.href = "promoties&rapportage.php";})
+        prijs.innerHTML = "Inspectie";
+        prijs.style.fontSize = "20px";
+        prijs.addEventListener("click", (g) =>{ g.preventDefault(); window.location.href = "inspectie.php";})
+        offerte.innerHTML = "Observatie & onderzoek";
+        offerte.style.fontSize = "20px";
+        offerte.addEventListener("click", (t) =>{t.preventDefault(); window.location.href = "observatie&onderzoek.php";})
+        contact.style.display = "none";
         
     })
 });

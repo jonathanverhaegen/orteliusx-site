@@ -21,17 +21,17 @@
 
         <div class="menu_mob" >
             
-                <a id="link" href="index.php#diensten_mob">Diensten</a>
-                <a id="link" href="prijzen.php">Prijzen</a>
-                <a id="link" href="offerte.php">Offerte</a>
-                <a id="link" href="contact.php">Contact</a>
+                <a class="dienstClick" id="link" href="">Diensten</a>
+                <a class="dienstClick2" id="link" href="prijzen.php">Prijzen</a>
+                <a class="dienstClick3" id="link" href="offerte.php">Offerte</a>
+                <a class="dienstClick4" id="link" href="contact.php">Contact</a>
             
         </div>
 
         <div class="menu_diensten">
 
             <a id="" href="promoties&rapportage.php">PROMOTIES & RAPPORTAGE</a>
-            <a id="" href="observatie&onderzoek.php">OBSERVATIES EN ONDERZOEK</a>
+            <a id="" href="observatie&onderzoek.php">OBSERVATIES & ONDERZOEK</a>
             <a id="" href="inspectie.php">INSPECTIE</a>
         
         </div>
