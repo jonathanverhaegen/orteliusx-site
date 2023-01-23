@@ -238,7 +238,7 @@ h1{
 .prev, .next{
     position:relative;
     z-index:1;
-    top:-150px; 
+    bottom: 100px;
     width: auto;
     color: #0939DE;
     font-size: 25px; 

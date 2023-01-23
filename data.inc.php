@@ -79,19 +79,19 @@ $promoties = [
 
         $inspecties = [
             "installaties" => [
-                "image" => "images/installatiesgroot.png",
+                "image" => "images/installatiesgroot.jpeg",
                 "title" => "installaties",
-                "info" => "Moeilijk bereikbare installaties vormen geen probleem voor drones. Via luchtopnames kan er zowat alles in beeld gebracht worden voor een veelzijdige analyse. Zo kan er gekeken orden op het ruwe beeldmateriaal per sectie, maar ook door middel van aangeleverde 3D modellen waarop metingen kunnen worden gedaan. Deze 3D modellen kunnen we eveneens aanleveren in digitaal formaat (point cloud) om in te brengen in uw eigen CAD software. ",
+                "info" => "Moeilijk bereikbare installaties vormen geen probleem voor drones. Via luchtopnames kan er zowat alles in beeld gebracht worden voor een veelzijdige analyse. Zo kan er gekeken worden op het ruwe beeldmateriaal per sectie, maar ook door middel van aangeleverde 3D modellen waarop metingen kunnen worden gedaan. Deze 3D modellen kunnen we eveneens aanleveren in digitaal formaat (point cloud) om in te brengen in uw eigen CAD software. ",
                 "catagorie" => "Inspectie"
             ],
             "gebouwen/constructies" => [
-                "image" => "images/gebouwengroot.png",
+                "image" => "images/gebouwengroot.jpeg",
                 "title" => "gebouwen & constructies",
                 "info" => "Het werken met stellingen of een hoogtewerker is omslachtig geworden voor het uitvoeren van inspecties van gevels of hoogte-observaties. Door gebrek aan ruimte en het in vele situaties ondoenbaar is om elke hoek doorgrondig te inspecteren vormen drones de oplossing voor het bekomen van een goede analyse.",
                 "catagorie" => "Inspectie"
             ],
             "daken" => [
-                "video" => "videos/inspectiedak.mp4",
+                "image" => "images/inspectiedak.jpeg",
                 "title" => "daken",
                 "info" => "Wij leveren foto’s van elk type dak. Hier kunnen anomalieën op worden gevonden en doorgestuurd worden naar desbetreffende instanties. Een veelvoorkomend gebruik is het fotograferen van daken na een periode van regen. Hier wordt dan gekeken naar de waterafloop bij platte daken of naar de dakgoten voor verstoppingen of lekkages. 
                 <br><br>Ook de veiligheid staat centraal, er hoeft niemand het dak op!
@@ -103,8 +103,8 @@ $promoties = [
 
             $prijzen = [
                 "basic" => [ "titel" => "BASIC", "prijs" => "€379", "uitleg" => "Ideaal voor lichte opdrachten, snelle inspecties, ruw beeldmateriaal","info" => ["Kleinschalige luchtopnames", "Foto’s onroerend goed", "Inspecties met ruw beeldmateriaal"]],
-                "advanced" =>[ "titel" => "ADVANCED", "prijs" => "€659", "uitleg" => "Ideaal voor gedetailleerde inspecties, uitgebreide visuele kaarten, opmetingen, schadeclaims", "info"=> ["Gegeneren van 2D/3D modellen", "Ruimtebeheer", "Cartografie", "Landbouw monitoring"] ],
-                "advancedplus" =>[ "titel" => "ADVANCED+", "prijs" => "€>899", "uitleg" => "Ideaal voor het nemen van een all-in-one formule", "info"=>["Gaat verder op de Advanced opdrachten", "Toevoeging van rapporten bij observaties en inspecties", "Toevoeging videoproductie bij opnames van beeldmateriaal"] ],
+                "advanced" =>[ "titel" => "ADVANCED", "prijs" => "€659", "uitleg" => "Ideaal voor gedetailleerde inspecties, uitgebreide visuele kaarten, opmetingen, schadeclaims", "info"=> ["Generen van 2D/3D modellen", "Ruimtebeheer", "Cartografie", "Landbouw monitoring"] ],
+                "advancedplus" =>[ "titel" => "ADVANCED+", "prijs" => ">€899", "uitleg" => "Ideaal voor het nemen van een all-in-one formule", "info"=>["Gaat verder op de Advanced opdrachten", "Toevoeging van rapporten bij observaties en inspecties", "Toevoeging videoproductie bij opnames van beeldmateriaal"] ],
                 "op maat" =>[ "titel" => "OP MAAT", "prijs" => "Variabel", "uitleg" => "Wij kunnen onze aanbiedingen aanpassen op maat van uw behoeften", "info"=>["Indien u een ander concept voor ogen heeft of afwijkingen treden op, aarzel dan niet om ons te contacteren. Wij maken voor u een aangepaste offerte en werken samen naar een gepersonaliseerd resultaat."] ]
                 
             ];
