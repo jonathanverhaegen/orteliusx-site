@@ -5,8 +5,8 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if(document.documentElement.scrollTop > 0){
-   document.querySelector('.index__header').style.filter = "blur(4px)";
-   document.querySelector('h1').style.color = "black";
+   document.querySelector('.index__header').style.filter = "blur(8px)";
+   //document.querySelector('h1').style.color = "black";
   }else{
     document.querySelector('.index__header').style.filter = "blur(0px)";
     document.querySelector('h1').style.color = "white";
