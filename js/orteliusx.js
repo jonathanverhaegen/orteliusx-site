@@ -1,10 +1,32 @@
+//scroll event blurry images
+let page = document.querySelector('body');
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if(document.documentElement.scrollTop > 0){
+   document.querySelector('.index__header').style.filter = "blur(4px)";
+   document.querySelector('h1').style.color = "black";
+  }else{
+    document.querySelector('.index__header').style.filter = "blur(0px)";
+    document.querySelector('h1').style.color = "white";
+  }
+}
+
+
+
+
+
+
+
+
 
 
 //hamburger menu
 
 
 document.querySelector("#hamburger").addEventListener("click", function(e){
-
+    console.log("test");
    
     var checkbox = document.querySelector('#hamburger').checked;
     var afbeelding = document.querySelector(".img_hamburger");
@@ -147,8 +169,9 @@ window.addEventListener("click", function(event){
 
 
 
+if(document.querySelector("#container_titels") !== null){
 
-let container = document.querySelector("#container_titels").childNodes[3].innerHTML;
+    let container = document.querySelector("#container_titels").childNodes[3].innerHTML;
 
 
 
@@ -289,6 +312,11 @@ if(container == "Inspectie"){
     
     
 }
+}
+
+
+
+
 
 
 

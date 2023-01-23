@@ -16,9 +16,7 @@ header {
     border-bottom: 3px solid #0939DE;
     position: fixed;
     width:100%;
-    z-index:10;
-    
-    
+    z-index:1000000000000;
 }
 
 .menu_desk{
@@ -34,13 +32,26 @@ header {
 
 
 body{
-    background-image: url("../images/header.png");
+    /*background-image: url("../images/header.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1000px;
-    background-position-x: center;
-    font-family: 'Roboto', sans-serif;
+    background-position-x: center;*/
+    font-family: 'Roboto', sans-serif;  
+    position:relative;
     
+}
+
+.index__header{
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    height:100vh;
+    width: 100vw;
+    top:0; 
+    position: fixed;
 }
 
 .logo {
@@ -128,6 +139,8 @@ h1{
     text-align: center;
     top:300px;
     position: fixed;
+    top: 45vh;
+    left:0;
     z-index:-1;
     width:100%;
     margin-left:auto;
@@ -135,6 +148,7 @@ h1{
     font-style:italic;
     font-weight:300;
     font-size:26px;
+    z-index:2;
 }
 
 
@@ -143,7 +157,10 @@ h1{
     position: relative;
     top:600px;
     padding-top:25px;
-    width:100%
+    width:100%;
+    position:relative;
+    z-index:2;
+    margin-top: 100vh;
 }
 
 #container #intro p{

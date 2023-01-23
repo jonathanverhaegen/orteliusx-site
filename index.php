@@ -50,8 +50,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <?php include_once("header.inc.php"); ?>
 
+<div class="index__header">
+    
+</div>
 
 <h1>PROFESSIONAL DRONE SOLUTIONS</h1>
+
+
+
 
 
 <div id="container">
