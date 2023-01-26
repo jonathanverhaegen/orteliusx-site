@@ -50,8 +50,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <?php include_once("header.inc.php"); ?>
 
-<div class="index__header">
+<!--<div class="index__header">
     
+</div>-->
+<div class="index__header" >
+    <video  autoplay loop>
+        <source src="videos/Banner_bluemoon.mp4" type="video/mp4">
+    </video>
 </div>
 
 <h1>PROFESSIONAL DRONE SOLUTIONS</h1>
