@@ -54,8 +54,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 </div>-->
 <div class="index__header" >
-    <video  autoplay loop>
-        <source src="videos/Banner_bluemoon.mp4" type="video/mp4">
+    <video  autoplay="autoplay" loop="true" playsinline muted>
+        <source src="./videos/Banner_bluemoon.mp4" type="video/mp4">
+        <source src="./videos/Banner_bluemoon.wemb" type="video/webm">
     </video>
 </div>
 

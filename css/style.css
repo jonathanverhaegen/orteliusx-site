@@ -54,6 +54,11 @@ body{
     position: fixed;
 }
 
+.index__header video{
+    height: 100vh;
+    object-fit: cover;
+}
+
 .logo {
     position: relative;
     width:250px;
@@ -67,7 +72,7 @@ body{
 }
 
 .logo img{
-    height:35px;
+    height:18px;
     
 }
 
@@ -160,7 +165,7 @@ h1{
     width:100%;
     position:relative;
     z-index:2;
-    margin-top: 100vh;
+    top: 100vh;
 }
 
 #container #intro p{
@@ -836,7 +841,7 @@ footer #foot  p{
 
     #container{
         position:absolute;
-        top:100%;
+        top:100vh;
     }
 
     header{
@@ -866,7 +871,7 @@ footer #foot  p{
     }
 
     .logo img{
-        height :2.2em;
+        height : 18px;
     }
 
     nav{
